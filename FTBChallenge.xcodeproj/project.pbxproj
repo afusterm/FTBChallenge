@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9A1E91E1FEC5B5D00CE2D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E91D1FEC5B5D00CE2D76 /* AppDelegate.swift */; };
+		A9A1E9201FEC5B5D00CE2D76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E91F1FEC5B5D00CE2D76 /* ViewController.swift */; };
+		A9A1E9231FEC5B5D00CE2D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9211FEC5B5D00CE2D76 /* Main.storyboard */; };
+		A9A1E9251FEC5B5E00CE2D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9241FEC5B5E00CE2D76 /* Assets.xcassets */; };
+		A9A1E9281FEC5B5E00CE2D76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9261FEC5B5E00CE2D76 /* LaunchScreen.storyboard */; };
+		A9A1E9331FEC5B5E00CE2D76 /* FTBChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E9321FEC5B5E00CE2D76 /* FTBChallengeTests.swift */; };
+		A9A1E9401FEC5C6C00CE2D76 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E93E1FEC5C6C00CE2D76 /* LoginViewController.swift */; };
+		A9A1E9411FEC5C6C00CE2D76 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E93F1FEC5C6C00CE2D76 /* LoginViewController.xib */; };
+		A9A1E9441FEC5CB700CE2D76 /* background_login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9431FEC5CB700CE2D76 /* background_login.jpg */; };
+		A9A1E9461FEC5CEA00CE2D76 /* logo_ftb.png in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9451FEC5CEA00CE2D76 /* logo_ftb.png */; };
+		A9A1E94A1FEC5F1900CE2D76 /* button_ok.png in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9481FEC5F1900CE2D76 /* button_ok.png */; };
+		A9A1E94B1FEC5F1900CE2D76 /* imput_form.png in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9491FEC5F1900CE2D76 /* imput_form.png */; };
+		A9A1E94F1FEC617C00CE2D76 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E94D1FEC617C00CE2D76 /* RootViewController.swift */; };
+		A9A1E9501FEC617C00CE2D76 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E94E1FEC617C00CE2D76 /* RootViewController.xib */; };
+		A9A1E9531FEC61C700CE2D76 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E9511FEC61C700CE2D76 /* MyAccountViewController.swift */; };
+		A9A1E9541FEC61C700CE2D76 /* MyAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9521FEC61C700CE2D76 /* MyAccountViewController.xib */; };
+		A9A1E9571FEC61E800CE2D76 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E9551FEC61E800CE2D76 /* PlayersViewController.swift */; };
+		A9A1E9581FEC61E800CE2D76 /* PlayersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9561FEC61E800CE2D76 /* PlayersViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9A1E92F1FEC5B5E00CE2D76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9A1E9121FEC5B5D00CE2D76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9A1E9191FEC5B5D00CE2D76;
+			remoteInfo = FTBChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9A1E91A1FEC5B5D00CE2D76 /* FTBChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTBChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A1E91D1FEC5B5D00CE2D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9A1E91F1FEC5B5D00CE2D76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9A1E9221FEC5B5D00CE2D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9A1E9241FEC5B5E00CE2D76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9A1E9271FEC5B5E00CE2D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9A1E9291FEC5B5E00CE2D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9A1E92E1FEC5B5E00CE2D76 /* FTBChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTBChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A1E9321FEC5B5E00CE2D76 /* FTBChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTBChallengeTests.swift; sourceTree = "<group>"; };
+		A9A1E9341FEC5B5E00CE2D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9A1E93E1FEC5C6C00CE2D76 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A9A1E93F1FEC5C6C00CE2D76 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A9A1E9431FEC5CB700CE2D76 /* background_login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_login.jpg; sourceTree = "<group>"; };
+		A9A1E9451FEC5CEA00CE2D76 /* logo_ftb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_ftb.png; sourceTree = "<group>"; };
+		A9A1E9481FEC5F1900CE2D76 /* button_ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_ok.png; sourceTree = "<group>"; };
+		A9A1E9491FEC5F1900CE2D76 /* imput_form.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imput_form.png; sourceTree = "<group>"; };
+		A9A1E94D1FEC617C00CE2D76 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		A9A1E94E1FEC617C00CE2D76 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		A9A1E9511FEC61C700CE2D76 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		A9A1E9521FEC61C700CE2D76 /* MyAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAccountViewController.xib; sourceTree = "<group>"; };
+		A9A1E9551FEC61E800CE2D76 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		A9A1E9561FEC61E800CE2D76 /* PlayersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayersViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9A1E9171FEC5B5D00CE2D76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9A1E92B1FEC5B5E00CE2D76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9A1E9111FEC5B5D00CE2D76 = {
+			isa = PBXGroup;
+			children = (
+				A9A1E91C1FEC5B5D00CE2D76 /* FTBChallenge */,
+				A9A1E9311FEC5B5E00CE2D76 /* FTBChallengeTests */,
+				A9A1E91B1FEC5B5D00CE2D76 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9A1E91B1FEC5B5D00CE2D76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9A1E91A1FEC5B5D00CE2D76 /* FTBChallenge.app */,
+				A9A1E92E1FEC5B5E00CE2D76 /* FTBChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9A1E91C1FEC5B5D00CE2D76 /* FTBChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				A9A1E9421FEC5C9A00CE2D76 /* Resources */,
+				A9A1E93D1FEC5BA900CE2D76 /* Controllers */,
+				A9A1E91D1FEC5B5D00CE2D76 /* AppDelegate.swift */,
+				A9A1E91F1FEC5B5D00CE2D76 /* ViewController.swift */,
+				A9A1E9211FEC5B5D00CE2D76 /* Main.storyboard */,
+				A9A1E9241FEC5B5E00CE2D76 /* Assets.xcassets */,
+				A9A1E9261FEC5B5E00CE2D76 /* LaunchScreen.storyboard */,
+				A9A1E9291FEC5B5E00CE2D76 /* Info.plist */,
+			);
+			path = FTBChallenge;
+			sourceTree = "<group>";
+		};
+		A9A1E9311FEC5B5E00CE2D76 /* FTBChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9A1E9321FEC5B5E00CE2D76 /* FTBChallengeTests.swift */,
+				A9A1E9341FEC5B5E00CE2D76 /* Info.plist */,
+			);
+			path = FTBChallengeTests;
+			sourceTree = "<group>";
+		};
+		A9A1E93D1FEC5BA900CE2D76 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A9A1E93E1FEC5C6C00CE2D76 /* LoginViewController.swift */,
+				A9A1E93F1FEC5C6C00CE2D76 /* LoginViewController.xib */,
+				A9A1E94D1FEC617C00CE2D76 /* RootViewController.swift */,
+				A9A1E94E1FEC617C00CE2D76 /* RootViewController.xib */,
+				A9A1E9511FEC61C700CE2D76 /* MyAccountViewController.swift */,
+				A9A1E9521FEC61C700CE2D76 /* MyAccountViewController.xib */,
+				A9A1E9551FEC61E800CE2D76 /* PlayersViewController.swift */,
+				A9A1E9561FEC61E800CE2D76 /* PlayersViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A9A1E9421FEC5C9A00CE2D76 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9A1E94C1FEC5F2800CE2D76 /* Login */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A9A1E94C1FEC5F2800CE2D76 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A9A1E9481FEC5F1900CE2D76 /* button_ok.png */,
+				A9A1E9491FEC5F1900CE2D76 /* imput_form.png */,
+				A9A1E9451FEC5CEA00CE2D76 /* logo_ftb.png */,
+				A9A1E9431FEC5CB700CE2D76 /* background_login.jpg */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9A1E9191FEC5B5D00CE2D76 /* FTBChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9A1E9371FEC5B5E00CE2D76 /* Build configuration list for PBXNativeTarget "FTBChallenge" */;
+			buildPhases = (
+				A9A1E9161FEC5B5D00CE2D76 /* Sources */,
+				A9A1E9171FEC5B5D00CE2D76 /* Frameworks */,
+				A9A1E9181FEC5B5D00CE2D76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTBChallenge;
+			productName = FTBChallenge;
+			productReference = A9A1E91A1FEC5B5D00CE2D76 /* FTBChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9A1E92D1FEC5B5E00CE2D76 /* FTBChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9A1E93A1FEC5B5E00CE2D76 /* Build configuration list for PBXNativeTarget "FTBChallengeTests" */;
+			buildPhases = (
+				A9A1E92A1FEC5B5E00CE2D76 /* Sources */,
+				A9A1E92B1FEC5B5E00CE2D76 /* Frameworks */,
+				A9A1E92C1FEC5B5E00CE2D76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9A1E9301FEC5B5E00CE2D76 /* PBXTargetDependency */,
+			);
+			name = FTBChallengeTests;
+			productName = FTBChallengeTests;
+			productReference = A9A1E92E1FEC5B5E00CE2D76 /* FTBChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9A1E9121FEC5B5D00CE2D76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Alejandro;
+				TargetAttributes = {
+					A9A1E9191FEC5B5D00CE2D76 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A9A1E92D1FEC5B5E00CE2D76 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9A1E9191FEC5B5D00CE2D76;
+					};
+				};
+			};
+			buildConfigurationList = A9A1E9151FEC5B5D00CE2D76 /* Build configuration list for PBXProject "FTBChallenge" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9A1E9111FEC5B5D00CE2D76;
+			productRefGroup = A9A1E91B1FEC5B5D00CE2D76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9A1E9191FEC5B5D00CE2D76 /* FTBChallenge */,
+				A9A1E92D1FEC5B5E00CE2D76 /* FTBChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9A1E9181FEC5B5D00CE2D76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A1E9411FEC5C6C00CE2D76 /* LoginViewController.xib in Resources */,
+				A9A1E9281FEC5B5E00CE2D76 /* LaunchScreen.storyboard in Resources */,
+				A9A1E9251FEC5B5E00CE2D76 /* Assets.xcassets in Resources */,
+				A9A1E94B1FEC5F1900CE2D76 /* imput_form.png in Resources */,
+				A9A1E9441FEC5CB700CE2D76 /* background_login.jpg in Resources */,
+				A9A1E9501FEC617C00CE2D76 /* RootViewController.xib in Resources */,
+				A9A1E9231FEC5B5D00CE2D76 /* Main.storyboard in Resources */,
+				A9A1E9461FEC5CEA00CE2D76 /* logo_ftb.png in Resources */,
+				A9A1E9581FEC61E800CE2D76 /* PlayersViewController.xib in Resources */,
+				A9A1E9541FEC61C700CE2D76 /* MyAccountViewController.xib in Resources */,
+				A9A1E94A1FEC5F1900CE2D76 /* button_ok.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9A1E92C1FEC5B5E00CE2D76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9A1E9161FEC5B5D00CE2D76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A1E9401FEC5C6C00CE2D76 /* LoginViewController.swift in Sources */,
+				A9A1E9201FEC5B5D00CE2D76 /* ViewController.swift in Sources */,
+				A9A1E9531FEC61C700CE2D76 /* MyAccountViewController.swift in Sources */,
+				A9A1E94F1FEC617C00CE2D76 /* RootViewController.swift in Sources */,
+				A9A1E91E1FEC5B5D00CE2D76 /* AppDelegate.swift in Sources */,
+				A9A1E9571FEC61E800CE2D76 /* PlayersViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9A1E92A1FEC5B5E00CE2D76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A1E9331FEC5B5E00CE2D76 /* FTBChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9A1E9301FEC5B5E00CE2D76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9A1E9191FEC5B5D00CE2D76 /* FTBChallenge */;
+			targetProxy = A9A1E92F1FEC5B5E00CE2D76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9A1E9211FEC5B5D00CE2D76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9A1E9221FEC5B5D00CE2D76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9A1E9261FEC5B5E00CE2D76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9A1E9271FEC5B5E00CE2D76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9A1E9351FEC5B5E00CE2D76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9A1E9361FEC5B5E00CE2D76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9A1E9381FEC5B5E00CE2D76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5QHSG2783;
+				INFOPLIST_FILE = FTBChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Alejandro.FTBChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9A1E9391FEC5B5E00CE2D76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5QHSG2783;
+				INFOPLIST_FILE = FTBChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Alejandro.FTBChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9A1E93B1FEC5B5E00CE2D76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5QHSG2783;
+				INFOPLIST_FILE = FTBChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Alejandro.FTBChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTBChallenge.app/FTBChallenge";
+			};
+			name = Debug;
+		};
+		A9A1E93C1FEC5B5E00CE2D76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5QHSG2783;
+				INFOPLIST_FILE = FTBChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Alejandro.FTBChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTBChallenge.app/FTBChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9A1E9151FEC5B5D00CE2D76 /* Build configuration list for PBXProject "FTBChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A1E9351FEC5B5E00CE2D76 /* Debug */,
+				A9A1E9361FEC5B5E00CE2D76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9A1E9371FEC5B5E00CE2D76 /* Build configuration list for PBXNativeTarget "FTBChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A1E9381FEC5B5E00CE2D76 /* Debug */,
+				A9A1E9391FEC5B5E00CE2D76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9A1E93A1FEC5B5E00CE2D76 /* Build configuration list for PBXNativeTarget "FTBChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A1E93B1FEC5B5E00CE2D76 /* Debug */,
+				A9A1E93C1FEC5B5E00CE2D76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9A1E9121FEC5B5D00CE2D76 /* Project object */;
+}
