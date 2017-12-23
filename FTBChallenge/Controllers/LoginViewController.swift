@@ -9,31 +9,46 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
+    @IBOutlet weak var userEntry: UITextField!
+    @IBOutlet weak var passwordEntry: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func goToRoot(_ sender: Any) {
-        let rootVC = RootViewController()
-        self.navigationController?.pushViewController(rootVC, animated: true)
-    }
+    // MARK: Actions
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func doLogin(_ sender: Any) {
+        let loginInteractor = LoginInteractor()
+        // TODO: make a guard and show error message if user and password are not filled
+        /* XXX
+        guard let userName = userEntry.text else {
+            print("Usuario vacio")
+            return
+        }*/
+        
+        let userName = userEntry.text!
+        
+        if (userName.isEmpty) {
+            print("Usuario vacio")
+            return
+        }
+        
+        guard let password = passwordEntry.text else {
+            print("Contraseña vacía")
+            return
+        }
+        
+        loginInteractor.login(userName: userName, password: password, closure: {(isValid: Bool, message: String?) -> Void in
+            if (isValid) {
+                let rootVC = RootViewController()
+                self.navigationController?.pushViewController(rootVC, animated: true)
+            }
+        })
     }
-    */
-
 }

@@ -9,6 +9,8 @@
 import UIKit
 
 class RootViewController: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,13 @@ class RootViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+   
+    
+    @IBAction func toLogin(_ sender: Any) {
+        let loginVC = LoginViewController()
+        navigationController?.pushViewController(loginVC, animated: true)
+    }
+    
     
 
     /*

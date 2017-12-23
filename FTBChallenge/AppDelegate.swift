@@ -13,10 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        let viewController = LoginViewController()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let viewController = createViewController()
+        
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
         
@@ -45,6 +46,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    // MARK: Properties
+    
+    var hasPreviousSession: Bool {
+        return false
+    }
+    
+    // MARK: Helper methods
+    
+    func createViewController() -> UIViewController {
+        if hasPreviousSession {
+            return UINavigationController(rootViewController: RootViewController())
+        }
+        
+        return UINavigationController(rootViewController: LoginViewController())
+    }
 }
 
