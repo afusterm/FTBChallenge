@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A91C80371FEE55680090AFDC /* PlayersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A91C80351FEE55680090AFDC /* PlayersViewController.xib */; };
+		A91C80381FEE55680090AFDC /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C80361FEE55680090AFDC /* PlayersViewController.swift */; };
+		A95838ED1FEDB54F0014D869 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95838EC1FEDB54F0014D869 /* LoginInteractor.swift */; };
 		A9A1E91E1FEC5B5D00CE2D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E91D1FEC5B5D00CE2D76 /* AppDelegate.swift */; };
 		A9A1E9201FEC5B5D00CE2D76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E91F1FEC5B5D00CE2D76 /* ViewController.swift */; };
 		A9A1E9231FEC5B5D00CE2D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9211FEC5B5D00CE2D76 /* Main.storyboard */; };
@@ -23,8 +26,6 @@
 		A9A1E9501FEC617C00CE2D76 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E94E1FEC617C00CE2D76 /* RootViewController.xib */; };
 		A9A1E9531FEC61C700CE2D76 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E9511FEC61C700CE2D76 /* MyAccountViewController.swift */; };
 		A9A1E9541FEC61C700CE2D76 /* MyAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9521FEC61C700CE2D76 /* MyAccountViewController.xib */; };
-		A9A1E9571FEC61E800CE2D76 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E9551FEC61E800CE2D76 /* PlayersViewController.swift */; };
-		A9A1E9581FEC61E800CE2D76 /* PlayersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9561FEC61E800CE2D76 /* PlayersViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A91C80351FEE55680090AFDC /* PlayersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayersViewController.xib; sourceTree = "<group>"; };
+		A91C80361FEE55680090AFDC /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		A95838EC1FEDB54F0014D869 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		A9A1E91A1FEC5B5D00CE2D76 /* FTBChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTBChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A1E91D1FEC5B5D00CE2D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A1E91F1FEC5B5D00CE2D76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,8 +62,6 @@
 		A9A1E94E1FEC617C00CE2D76 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		A9A1E9511FEC61C700CE2D76 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		A9A1E9521FEC61C700CE2D76 /* MyAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAccountViewController.xib; sourceTree = "<group>"; };
-		A9A1E9551FEC61E800CE2D76 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
-		A9A1E9561FEC61E800CE2D76 /* PlayersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayersViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A95838EB1FEDB52A0014D869 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A95838EC1FEDB54F0014D869 /* LoginInteractor.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A9A1E9111FEC5B5D00CE2D76 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +111,7 @@
 		A9A1E91C1FEC5B5D00CE2D76 /* FTBChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				A95838EB1FEDB52A0014D869 /* Models */,
 				A9A1E9421FEC5C9A00CE2D76 /* Resources */,
 				A9A1E93D1FEC5BA900CE2D76 /* Controllers */,
 				A9A1E91D1FEC5B5D00CE2D76 /* AppDelegate.swift */,
@@ -125,14 +136,14 @@
 		A9A1E93D1FEC5BA900CE2D76 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A91C80361FEE55680090AFDC /* PlayersViewController.swift */,
+				A91C80351FEE55680090AFDC /* PlayersViewController.xib */,
 				A9A1E93E1FEC5C6C00CE2D76 /* LoginViewController.swift */,
 				A9A1E93F1FEC5C6C00CE2D76 /* LoginViewController.xib */,
 				A9A1E94D1FEC617C00CE2D76 /* RootViewController.swift */,
 				A9A1E94E1FEC617C00CE2D76 /* RootViewController.xib */,
 				A9A1E9511FEC61C700CE2D76 /* MyAccountViewController.swift */,
 				A9A1E9521FEC61C700CE2D76 /* MyAccountViewController.xib */,
-				A9A1E9551FEC61E800CE2D76 /* PlayersViewController.swift */,
-				A9A1E9561FEC61E800CE2D76 /* PlayersViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -247,7 +258,7 @@
 				A9A1E9501FEC617C00CE2D76 /* RootViewController.xib in Resources */,
 				A9A1E9231FEC5B5D00CE2D76 /* Main.storyboard in Resources */,
 				A9A1E9461FEC5CEA00CE2D76 /* logo_ftb.png in Resources */,
-				A9A1E9581FEC61E800CE2D76 /* PlayersViewController.xib in Resources */,
+				A91C80371FEE55680090AFDC /* PlayersViewController.xib in Resources */,
 				A9A1E9541FEC61C700CE2D76 /* MyAccountViewController.xib in Resources */,
 				A9A1E94A1FEC5F1900CE2D76 /* button_ok.png in Resources */,
 			);
@@ -268,11 +279,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9A1E9401FEC5C6C00CE2D76 /* LoginViewController.swift in Sources */,
+				A91C80381FEE55680090AFDC /* PlayersViewController.swift in Sources */,
 				A9A1E9201FEC5B5D00CE2D76 /* ViewController.swift in Sources */,
+				A95838ED1FEDB54F0014D869 /* LoginInteractor.swift in Sources */,
 				A9A1E9531FEC61C700CE2D76 /* MyAccountViewController.swift in Sources */,
 				A9A1E94F1FEC617C00CE2D76 /* RootViewController.swift in Sources */,
 				A9A1E91E1FEC5B5D00CE2D76 /* AppDelegate.swift in Sources */,
-				A9A1E9571FEC61E800CE2D76 /* PlayersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

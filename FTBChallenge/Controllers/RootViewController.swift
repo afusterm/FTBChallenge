@@ -22,23 +22,21 @@ class RootViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-   
     
-    @IBAction func toLogin(_ sender: Any) {
-        let loginVC = LoginViewController()
-        navigationController?.pushViewController(loginVC, animated: true)
+    // MARK: Actions
+    
+    @IBAction func goToMyAccount(_ sender: Any) {
+        navigationController?.pushViewController(MyAccountViewController(), animated: true)
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func goToPlayers(_ sender: Any) {
+        navigationController?.pushViewController(PlayersViewController(), animated: true)
     }
-    */
-
+    
+    @IBAction func emptyCache(_ sender: Any) {
+    }
+    
+    @IBAction func closeSession(_ sender: Any) {
+    }
+    
 }

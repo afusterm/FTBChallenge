@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,26 +21,49 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RootViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klU-Qh-Q9T">
-                    <rect key="frame" x="113" y="55" width="156" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14p-Nf-kO9">
-                    <rect key="frame" x="123" y="583" width="137" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="To login"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKM-UW-UfF" userLabel="myAccountButton">
+                    <rect key="frame" x="87" y="357" width="201" height="30"/>
+                    <state key="normal" title="Acerca de mí"/>
                     <connections>
-                        <action selector="toLogin:" destination="-1" eventType="touchUpInside" id="EnD-0t-huj"/>
+                        <action selector="goToMyAccount:" destination="-1" eventType="touchUpInside" id="Tl7-ia-tOr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29r-tu-DeF" userLabel="playersButton">
+                    <rect key="frame" x="87" y="407" width="201" height="30"/>
+                    <state key="normal" title="Players"/>
+                    <connections>
+                        <action selector="goToPlayers:" destination="-1" eventType="touchUpInside" id="w6D-S6-ouS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uig-Ff-c0j" userLabel="emptyCacheButton">
+                    <rect key="frame" x="87" y="464" width="201" height="30"/>
+                    <state key="normal" title="Vaciar cache"/>
+                    <connections>
+                        <action selector="emptyCache:" destination="-1" eventType="touchUpInside" id="YIr-I9-XXj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rK9-RN-3Fy" userLabel="closeSessionButton">
+                    <rect key="frame" x="141" y="525" width="92" height="30"/>
+                    <state key="normal" title="Cerrar sesión"/>
+                    <connections>
+                        <action selector="closeSession:" destination="-1" eventType="touchUpInside" id="fob-KN-hs8"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="klU-Qh-Q9T" secondAttribute="trailing" constant="106" id="BOC-8F-bD2"/>
-                <constraint firstItem="klU-Qh-Q9T" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="Gg8-bb-Ylx"/>
-                <constraint firstItem="klU-Qh-Q9T" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="113" id="aMe-2O-hiN"/>
+                <constraint firstItem="Uig-Ff-c0j" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="71" id="2eb-Af-obM"/>
+                <constraint firstAttribute="trailingMargin" secondItem="Uig-Ff-c0j" secondAttribute="trailing" constant="71" id="58n-F3-kbb"/>
+                <constraint firstItem="29r-tu-DeF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="71" id="8pR-ae-WVI"/>
+                <constraint firstAttribute="trailingMargin" secondItem="29r-tu-DeF" secondAttribute="trailing" constant="71" id="FLS-cs-Ua2"/>
+                <constraint firstItem="Uig-Ff-c0j" firstAttribute="top" secondItem="29r-tu-DeF" secondAttribute="bottom" constant="8" symbolic="YES" id="RQo-BQ-Tqw"/>
+                <constraint firstItem="NKM-UW-UfF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="71" id="TDR-Ov-cpM"/>
+                <constraint firstAttribute="trailingMargin" secondItem="rK9-RN-3Fy" secondAttribute="trailing" constant="71" id="VQE-6l-pfU"/>
+                <constraint firstAttribute="trailingMargin" secondItem="NKM-UW-UfF" secondAttribute="trailing" constant="71" id="j9j-3J-BRH"/>
+                <constraint firstItem="29r-tu-DeF" firstAttribute="top" secondItem="NKM-UW-UfF" secondAttribute="bottom" constant="8" symbolic="YES" id="nwN-yF-KJ4"/>
+                <constraint firstItem="rK9-RN-3Fy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="180" id="oex-JF-aH6"/>
+                <constraint firstItem="rK9-RN-3Fy" firstAttribute="top" secondItem="Uig-Ff-c0j" secondAttribute="bottom" constant="8" symbolic="YES" id="t0j-oX-7jy"/>
+                <constraint firstAttribute="bottomMargin" secondItem="rK9-RN-3Fy" secondAttribute="bottom" constant="112" id="zqO-I5-dya"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="24.5" y="52.5"/>
