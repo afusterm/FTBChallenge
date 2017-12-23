@@ -25,22 +25,14 @@ class LoginViewController: UIViewController {
     
     @IBAction func doLogin(_ sender: Any) {
         let loginInteractor = LoginInteractor()
-        // TODO: make a guard and show error message if user and password are not filled
-        /* XXX
-        guard let userName = userEntry.text else {
-            print("Usuario vacio")
-            return
-        }*/
-        
         let userName = userEntry.text!
+        let password = passwordEntry.text!
         
-        if (userName.isEmpty) {
-            print("Usuario vacio")
+        if (!validateUserName(userName: userName)) {
             return
         }
         
-        guard let password = passwordEntry.text else {
-            print("Contraseña vacía")
+        if (!validatePassword(password: password)) {
             return
         }
         
@@ -50,5 +42,31 @@ class LoginViewController: UIViewController {
                 self.navigationController?.pushViewController(rootVC, animated: true)
             }
         })
+    }
+    
+    // MARK: Helper methods
+    
+    func validateUserName(userName: String) -> Bool {
+        if (userName.isEmpty) {
+            showAlert(title: "Usuario vacío", message: "Introduzca nombre de usuario")
+            return false
+        }
+        
+        return true
+    }
+    
+    func validatePassword(password: String) -> Bool {
+        if (password.isEmpty) {
+            showAlert(title: "Contraseña vacía", message: "Introduzca contraseña")
+            return false
+        }
+        
+        return true
+    }
+    
+    func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
