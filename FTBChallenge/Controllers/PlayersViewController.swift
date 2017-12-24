@@ -12,10 +12,11 @@ class PlayersViewController: UIViewController {
     private let reuseIdentifier = "PlayerCell"
     
     var collectionView: UICollectionView!
-
+    var players: Players!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupCollectionView()
+        downloadPlayers()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,16 +24,18 @@ class PlayersViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func downloadPlayers() {
+        let playersInteractor = PlayersInteractor()
+        playersInteractor.download(closure: {(players: Players) -> Void in
+            self.players = players
+            setupCollectionView()
+        })
+    }
+    
     func setupCollectionView() {
         let layout = createLayout()
         collectionView = UICollectionView(frame: view.frame, collectionViewLayout: layout)
-        /* XXX
-        let cellNib = UINib(nibName: reuseIdentifier, bundle: nil)
-        collectionView.register(cellNib, forCellWithReuseIdentifier: reuseIdentifier)
-        */
-        
         collectionView.register(PlayerCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        
         collectionView.delegate = self
         collectionView.dataSource = self
         
@@ -64,13 +67,15 @@ extension PlayersViewController: UICollectionViewDelegate,
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return players.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PlayerCell
-        cell.textLabel.text = "Ozil"
-        cell.imageView.image = UIImage(named: "ozil.png")
+        let player = players.get(position: indexPath.row)
+        cell.textLabel.text = player.name
+        cell.imageView.image = player.image
+        
         return cell
     }
 }

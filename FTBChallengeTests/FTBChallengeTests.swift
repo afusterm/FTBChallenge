@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import FTBChallenge
+// XXX @testable import FTBChallenge
 
 class FTBChallengeTests: XCTestCase {
     

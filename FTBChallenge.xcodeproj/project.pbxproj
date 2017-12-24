@@ -11,6 +11,9 @@
 		A912789A1FEFB43E00B6A074 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278991FEFB43E00B6A074 /* PlayerCell.swift */; };
 		A912789E1FEFCD9000B6A074 /* fondo-players.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A912789C1FEFCD9000B6A074 /* fondo-players.jpg */; };
 		A912789F1FEFCD9000B6A074 /* celda-player.png in Resources */ = {isa = PBXBuildFile; fileRef = A912789D1FEFCD9000B6A074 /* celda-player.png */; };
+		A91278A31FF00C4F00B6A074 /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278A21FF00C4F00B6A074 /* Players.swift */; };
+		A91278A81FF011D000B6A074 /* PlayersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278A71FF011D000B6A074 /* PlayersInteractor.swift */; };
+		A91278AA1FF0153500B6A074 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278A91FF0153500B6A074 /* Player.swift */; };
 		A91C80681FEED2520090AFDC /* ozil.png in Resources */ = {isa = PBXBuildFile; fileRef = A91C80671FEED2510090AFDC /* ozil.png */; };
 		A95838ED1FEDB54F0014D869 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95838EC1FEDB54F0014D869 /* LoginInteractor.swift */; };
 		A9A1E91E1FEC5B5D00CE2D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E91D1FEC5B5D00CE2D76 /* AppDelegate.swift */; };
@@ -46,6 +49,9 @@
 		A91278991FEFB43E00B6A074 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		A912789C1FEFCD9000B6A074 /* fondo-players.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fondo-players.jpg"; sourceTree = "<group>"; };
 		A912789D1FEFCD9000B6A074 /* celda-player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "celda-player.png"; sourceTree = "<group>"; };
+		A91278A21FF00C4F00B6A074 /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
+		A91278A71FF011D000B6A074 /* PlayersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersInteractor.swift; sourceTree = "<group>"; };
+		A91278A91FF0153500B6A074 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A91C80671FEED2510090AFDC /* ozil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ozil.png; sourceTree = "<group>"; };
 		A95838EC1FEDB54F0014D869 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		A9A1E91A1FEC5B5D00CE2D76 /* FTBChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTBChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +103,15 @@
 			path = Players;
 			sourceTree = "<group>";
 		};
+		A91278A61FF011B000B6A074 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				A95838EC1FEDB54F0014D869 /* LoginInteractor.swift */,
+				A91278A71FF011D000B6A074 /* PlayersInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
 		A91C803B1FEE59710090AFDC /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +123,8 @@
 		A95838EB1FEDB52A0014D869 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A95838EC1FEDB54F0014D869 /* LoginInteractor.swift */,
+				A91278A21FF00C4F00B6A074 /* Players.swift */,
+				A91278A91FF0153500B6A074 /* Player.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,6 +150,7 @@
 		A9A1E91C1FEC5B5D00CE2D76 /* FTBChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				A91278A61FF011B000B6A074 /* Interactors */,
 				A91C803B1FEE59710090AFDC /* Views */,
 				A95838EB1FEDB52A0014D869 /* Models */,
 				A9A1E9421FEC5C9A00CE2D76 /* Resources */,
@@ -305,10 +322,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91278AA1FF0153500B6A074 /* Player.swift in Sources */,
+				A91278A31FF00C4F00B6A074 /* Players.swift in Sources */,
 				A912789A1FEFB43E00B6A074 /* PlayerCell.swift in Sources */,
 				A9A1E9401FEC5C6C00CE2D76 /* LoginViewController.swift in Sources */,
 				A9A1E9201FEC5B5D00CE2D76 /* ViewController.swift in Sources */,
 				A95838ED1FEDB54F0014D869 /* LoginInteractor.swift in Sources */,
+				A91278A81FF011D000B6A074 /* PlayersInteractor.swift in Sources */,
 				A9A1E9531FEC61C700CE2D76 /* MyAccountViewController.swift in Sources */,
 				A91278981FEFA17900B6A074 /* PlayersViewController.swift in Sources */,
 				A9A1E94F1FEC617C00CE2D76 /* RootViewController.swift in Sources */,
