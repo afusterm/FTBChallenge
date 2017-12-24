@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A91C803A1FEE568D0090AFDC /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C80391FEE568D0090AFDC /* PlayersViewController.swift */; };
+		A91278981FEFA17900B6A074 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278971FEFA17900B6A074 /* PlayersViewController.swift */; };
 		A91C803E1FEE5A310090AFDC /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C803C1FEE5A310090AFDC /* PlayerCell.swift */; };
 		A91C803F1FEE5A310090AFDC /* PlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A91C803D1FEE5A310090AFDC /* PlayerCell.xib */; };
+		A91C80681FEED2520090AFDC /* ozil.png in Resources */ = {isa = PBXBuildFile; fileRef = A91C80671FEED2510090AFDC /* ozil.png */; };
 		A95838ED1FEDB54F0014D869 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95838EC1FEDB54F0014D869 /* LoginInteractor.swift */; };
 		A9A1E91E1FEC5B5D00CE2D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E91D1FEC5B5D00CE2D76 /* AppDelegate.swift */; };
 		A9A1E9201FEC5B5D00CE2D76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E91F1FEC5B5D00CE2D76 /* ViewController.swift */; };
@@ -40,9 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A91C80391FEE568D0090AFDC /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		A91278971FEFA17900B6A074 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		A91C803C1FEE5A310090AFDC /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		A91C803D1FEE5A310090AFDC /* PlayerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerCell.xib; sourceTree = "<group>"; };
+		A91C80671FEED2510090AFDC /* ozil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ozil.png; sourceTree = "<group>"; };
 		A95838EC1FEDB54F0014D869 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		A9A1E91A1FEC5B5D00CE2D76 /* FTBChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTBChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A1E91D1FEC5B5D00CE2D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,7 +156,7 @@
 				A9A1E94E1FEC617C00CE2D76 /* RootViewController.xib */,
 				A9A1E9511FEC61C700CE2D76 /* MyAccountViewController.swift */,
 				A9A1E9521FEC61C700CE2D76 /* MyAccountViewController.xib */,
-				A91C80391FEE568D0090AFDC /* PlayersViewController.swift */,
+				A91278971FEFA17900B6A074 /* PlayersViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -162,6 +164,7 @@
 		A9A1E9421FEC5C9A00CE2D76 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A91C80671FEED2510090AFDC /* ozil.png */,
 				A9A1E94C1FEC5F2800CE2D76 /* Login */,
 			);
 			path = Resources;
@@ -266,6 +269,7 @@
 				A9A1E9251FEC5B5E00CE2D76 /* Assets.xcassets in Resources */,
 				A9A1E94B1FEC5F1900CE2D76 /* imput_form.png in Resources */,
 				A9A1E9441FEC5CB700CE2D76 /* background_login.jpg in Resources */,
+				A91C80681FEED2520090AFDC /* ozil.png in Resources */,
 				A9A1E9501FEC617C00CE2D76 /* RootViewController.xib in Resources */,
 				A9A1E9231FEC5B5D00CE2D76 /* Main.storyboard in Resources */,
 				A9A1E9461FEC5CEA00CE2D76 /* logo_ftb.png in Resources */,
@@ -294,7 +298,7 @@
 				A9A1E9201FEC5B5D00CE2D76 /* ViewController.swift in Sources */,
 				A95838ED1FEDB54F0014D869 /* LoginInteractor.swift in Sources */,
 				A9A1E9531FEC61C700CE2D76 /* MyAccountViewController.swift in Sources */,
-				A91C803A1FEE568D0090AFDC /* PlayersViewController.swift in Sources */,
+				A91278981FEFA17900B6A074 /* PlayersViewController.swift in Sources */,
 				A9A1E94F1FEC617C00CE2D76 /* RootViewController.swift in Sources */,
 				A9A1E91E1FEC5B5D00CE2D76 /* AppDelegate.swift in Sources */,
 			);
