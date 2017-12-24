@@ -31,7 +31,7 @@ class PlayersViewController: UIViewController {
         collectionView.register(cellNib, forCellWithReuseIdentifier: reuseIdentifier)
         */
         
-        collectionView.register(PlayersCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        collectionView.register(PlayerCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -68,7 +68,7 @@ extension PlayersViewController: UICollectionViewDelegate,
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PlayersCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PlayerCell
         cell.textLabel.text = "Ozil"
         cell.imageView.image = UIImage(named: "ozil.png")
         return cell
