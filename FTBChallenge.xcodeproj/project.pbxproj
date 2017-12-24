@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A91278981FEFA17900B6A074 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278971FEFA17900B6A074 /* PlayersViewController.swift */; };
+		A912789A1FEFB43E00B6A074 /* PlayersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278991FEFB43E00B6A074 /* PlayersCollectionViewCell.swift */; };
+		A912789E1FEFCD9000B6A074 /* fondo-players.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A912789C1FEFCD9000B6A074 /* fondo-players.jpg */; };
+		A912789F1FEFCD9000B6A074 /* celda-player.png in Resources */ = {isa = PBXBuildFile; fileRef = A912789D1FEFCD9000B6A074 /* celda-player.png */; };
 		A91C803E1FEE5A310090AFDC /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C803C1FEE5A310090AFDC /* PlayerCell.swift */; };
 		A91C803F1FEE5A310090AFDC /* PlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A91C803D1FEE5A310090AFDC /* PlayerCell.xib */; };
 		A91C80681FEED2520090AFDC /* ozil.png in Resources */ = {isa = PBXBuildFile; fileRef = A91C80671FEED2510090AFDC /* ozil.png */; };
@@ -42,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		A91278971FEFA17900B6A074 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		A91278991FEFB43E00B6A074 /* PlayersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersCollectionViewCell.swift; sourceTree = "<group>"; };
+		A912789C1FEFCD9000B6A074 /* fondo-players.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fondo-players.jpg"; sourceTree = "<group>"; };
+		A912789D1FEFCD9000B6A074 /* celda-player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "celda-player.png"; sourceTree = "<group>"; };
 		A91C803C1FEE5A310090AFDC /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		A91C803D1FEE5A310090AFDC /* PlayerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerCell.xib; sourceTree = "<group>"; };
 		A91C80671FEED2510090AFDC /* ozil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ozil.png; sourceTree = "<group>"; };
@@ -86,11 +92,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A912789B1FEFCD6900B6A074 /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				A912789D1FEFCD9000B6A074 /* celda-player.png */,
+				A912789C1FEFCD9000B6A074 /* fondo-players.jpg */,
+			);
+			path = Players;
+			sourceTree = "<group>";
+		};
 		A91C803B1FEE59710090AFDC /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				A91C803C1FEE5A310090AFDC /* PlayerCell.swift */,
 				A91C803D1FEE5A310090AFDC /* PlayerCell.xib */,
+				A91278991FEFB43E00B6A074 /* PlayersCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +180,7 @@
 		A9A1E9421FEC5C9A00CE2D76 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A912789B1FEFCD6900B6A074 /* Players */,
 				A91C80671FEED2510090AFDC /* ozil.png */,
 				A9A1E94C1FEC5F2800CE2D76 /* Login */,
 			);
@@ -268,11 +285,13 @@
 				A9A1E9281FEC5B5E00CE2D76 /* LaunchScreen.storyboard in Resources */,
 				A9A1E9251FEC5B5E00CE2D76 /* Assets.xcassets in Resources */,
 				A9A1E94B1FEC5F1900CE2D76 /* imput_form.png in Resources */,
+				A912789F1FEFCD9000B6A074 /* celda-player.png in Resources */,
 				A9A1E9441FEC5CB700CE2D76 /* background_login.jpg in Resources */,
 				A91C80681FEED2520090AFDC /* ozil.png in Resources */,
 				A9A1E9501FEC617C00CE2D76 /* RootViewController.xib in Resources */,
 				A9A1E9231FEC5B5D00CE2D76 /* Main.storyboard in Resources */,
 				A9A1E9461FEC5CEA00CE2D76 /* logo_ftb.png in Resources */,
+				A912789E1FEFCD9000B6A074 /* fondo-players.jpg in Resources */,
 				A91C803F1FEE5A310090AFDC /* PlayerCell.xib in Resources */,
 				A9A1E9541FEC61C700CE2D76 /* MyAccountViewController.xib in Resources */,
 				A9A1E94A1FEC5F1900CE2D76 /* button_ok.png in Resources */,
@@ -294,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A91C803E1FEE5A310090AFDC /* PlayerCell.swift in Sources */,
+				A912789A1FEFB43E00B6A074 /* PlayersCollectionViewCell.swift in Sources */,
 				A9A1E9401FEC5C6C00CE2D76 /* LoginViewController.swift in Sources */,
 				A9A1E9201FEC5B5D00CE2D76 /* ViewController.swift in Sources */,
 				A95838ED1FEDB54F0014D869 /* LoginInteractor.swift in Sources */,
@@ -456,6 +476,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5QHSG2783;
 				INFOPLIST_FILE = FTBChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Alejandro.FTBChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -471,6 +492,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5QHSG2783;
 				INFOPLIST_FILE = FTBChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Alejandro.FTBChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";

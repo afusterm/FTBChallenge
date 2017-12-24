@@ -26,38 +26,39 @@ class PlayersViewController: UIViewController {
     func setupCollectionView() {
         let layout = createLayout()
         collectionView = UICollectionView(frame: view.frame, collectionViewLayout: layout)
+        /* XXX
         let cellNib = UINib(nibName: reuseIdentifier, bundle: nil)
         collectionView.register(cellNib, forCellWithReuseIdentifier: reuseIdentifier)
+        */
         
-        collectionView.backgroundColor = UIColor.white
+        collectionView.register(PlayersCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        let background = UIImage(named: "fondo_players.jpg")
+        let backgroundView = UIImageView(image: background)
+        collectionView.backgroundView = backgroundView
         
         view.addSubview(collectionView)
     }
     
     func createLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewFlowLayout()
-        layout.minimumLineSpacing = 40
-        layout.minimumInteritemSpacing = 20
+        layout.minimumLineSpacing = 1
+        layout.minimumInteritemSpacing = 1
+        layout.scrollDirection = .vertical
+        let itemSide = view.frame.width / 2.3
+        layout.itemSize = CGSize(width: itemSide, height: itemSide)
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         
         return layout
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
-extension PlayersViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension PlayersViewController: UICollectionViewDelegate,
+    UICollectionViewDataSource {
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -67,17 +68,9 @@ extension PlayersViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PlayerCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PlayersCollectionViewCell
+        cell.textLabel.text = "Ozil"
+        cell.imageView.image = UIImage(named: "ozil.png")
         return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        let playerCell = cell as! PlayerCell
-        playerCell.imageView.image = UIImage(named: "ozil.png")
-        playerCell.nameLabel.text = "Isco"
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200, height: 200)
     }
 }
