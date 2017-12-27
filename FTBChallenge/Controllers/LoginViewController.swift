@@ -15,6 +15,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        userEntry.text = "ftbchallenge"
+        passwordEntry.text = "challengeFTB2017"
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,8 +40,13 @@ class LoginViewController: UIViewController {
         
         loginInteractor.login(userName: userName, password: password, closure: {(isValid: Bool, message: String?) -> Void in
             if (isValid) {
-                let rootVC = RootViewController()
-                self.navigationController?.pushViewController(rootVC, animated: true)
+                DispatchQueue.main.async {
+                    let rootVC = RootViewController()
+                    rootVC.navigationItem.hidesBackButton = true
+                    self.navigationController?.pushViewController(rootVC, animated: true)
+                }
+            } else {
+                self.showAlert(title: "Error en login", message: message!)
             }
         })
     }
@@ -65,8 +72,10 @@ class LoginViewController: UIViewController {
     }
     
     func showAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 }

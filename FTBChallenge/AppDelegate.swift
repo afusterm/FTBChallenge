@@ -49,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: Properties
     
     var hasPreviousSession: Bool {
-        return true
+        return false
     }
     
     // MARK: Helper methods
