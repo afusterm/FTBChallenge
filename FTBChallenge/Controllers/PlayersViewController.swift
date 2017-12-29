@@ -26,9 +26,11 @@ class PlayersViewController: UIViewController {
     
     func downloadPlayers() {
         let playersInteractor = PlayersInteractor()
-        playersInteractor.download(closure: {(players: Players) -> Void in
+        playersInteractor.downloadSignings(closure: {(players: Players) -> Void in
             self.players = players
-            setupCollectionView()
+            DispatchQueue.main.async {
+                self.setupCollectionView()
+            }
         })
     }
     
@@ -74,7 +76,7 @@ extension PlayersViewController: UICollectionViewDelegate,
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PlayerCell
         let player = players.get(position: indexPath.row)
         cell.textLabel.text = player.name
-        cell.imageView.image = player.image
+        cell.imageView.loadImageWith(urlString: player.imageUrl)
         
         return cell
     }

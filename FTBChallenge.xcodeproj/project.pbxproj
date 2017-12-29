@@ -15,7 +15,9 @@
 		A91278A81FF011D000B6A074 /* PlayersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278A71FF011D000B6A074 /* PlayersInteractor.swift */; };
 		A91278AA1FF0153500B6A074 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278A91FF0153500B6A074 /* Player.swift */; };
 		A91C80681FEED2520090AFDC /* ozil.png in Resources */ = {isa = PBXBuildFile; fileRef = A91C80671FEED2510090AFDC /* ozil.png */; };
+		A952165A1FF44BE200849825 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A95216591FF44BE100849825 /* placeholder.jpg */; };
 		A95838ED1FEDB54F0014D869 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95838EC1FEDB54F0014D869 /* LoginInteractor.swift */; };
+		A99625F91FF59D660044012D /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99625F81FF59D660044012D /* UIImageView+Cache.swift */; };
 		A9A1E91E1FEC5B5D00CE2D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E91D1FEC5B5D00CE2D76 /* AppDelegate.swift */; };
 		A9A1E9201FEC5B5D00CE2D76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E91F1FEC5B5D00CE2D76 /* ViewController.swift */; };
 		A9A1E9231FEC5B5D00CE2D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9211FEC5B5D00CE2D76 /* Main.storyboard */; };
@@ -53,7 +55,9 @@
 		A91278A71FF011D000B6A074 /* PlayersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersInteractor.swift; sourceTree = "<group>"; };
 		A91278A91FF0153500B6A074 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A91C80671FEED2510090AFDC /* ozil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ozil.png; sourceTree = "<group>"; };
+		A95216591FF44BE100849825 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
 		A95838EC1FEDB54F0014D869 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		A99625F81FF59D660044012D /* UIImageView+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
 		A9A1E91A1FEC5B5D00CE2D76 /* FTBChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTBChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A1E91D1FEC5B5D00CE2D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A1E91F1FEC5B5D00CE2D76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 		A912789B1FEFCD6900B6A074 /* Players */ = {
 			isa = PBXGroup;
 			children = (
+				A95216591FF44BE100849825 /* placeholder.jpg */,
 				A912789D1FEFCD9000B6A074 /* celda-player.png */,
 				A912789C1FEFCD9000B6A074 /* fondo-players.jpg */,
 			);
@@ -129,6 +134,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A99625F61FF592560044012D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A99625F81FF59D660044012D /* UIImageView+Cache.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A9A1E9111FEC5B5D00CE2D76 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +163,7 @@
 		A9A1E91C1FEC5B5D00CE2D76 /* FTBChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				A99625F61FF592560044012D /* Extensions */,
 				A91278A61FF011B000B6A074 /* Interactors */,
 				A91C803B1FEE59710090AFDC /* Views */,
 				A95838EB1FEDB52A0014D869 /* Models */,
@@ -303,6 +317,7 @@
 				A9A1E9231FEC5B5D00CE2D76 /* Main.storyboard in Resources */,
 				A9A1E9461FEC5CEA00CE2D76 /* logo_ftb.png in Resources */,
 				A912789E1FEFCD9000B6A074 /* fondo-players.jpg in Resources */,
+				A952165A1FF44BE200849825 /* placeholder.jpg in Resources */,
 				A9A1E9541FEC61C700CE2D76 /* MyAccountViewController.xib in Resources */,
 				A9A1E94A1FEC5F1900CE2D76 /* button_ok.png in Resources */,
 			);
@@ -327,6 +342,7 @@
 				A912789A1FEFB43E00B6A074 /* PlayerCell.swift in Sources */,
 				A9A1E9401FEC5C6C00CE2D76 /* LoginViewController.swift in Sources */,
 				A9A1E9201FEC5B5D00CE2D76 /* ViewController.swift in Sources */,
+				A99625F91FF59D660044012D /* UIImageView+Cache.swift in Sources */,
 				A95838ED1FEDB54F0014D869 /* LoginInteractor.swift in Sources */,
 				A91278A81FF011D000B6A074 /* PlayersInteractor.swift in Sources */,
 				A9A1E9531FEC61C700CE2D76 /* MyAccountViewController.swift in Sources */,

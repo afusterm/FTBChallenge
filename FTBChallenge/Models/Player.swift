@@ -11,5 +11,10 @@ import UIKit
 
 struct Player {
     var name: String
-    var image: UIImage?
+    var imageUrl: String
+    
+    init() {
+        name = ""
+        imageUrl = ""
+    }
 }
