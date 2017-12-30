@@ -14,6 +14,10 @@
 		A91193D21FF77BD50058042D /* CommonStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91193D11FF77BD50058042D /* CommonStubs.swift */; };
 		A91193D51FF7A1A60058042D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91193D41FF7A1A60058042D /* Alert.swift */; };
 		A91193D81FF7C2F30058042D /* button_acercademi.png in Resources */ = {isa = PBXBuildFile; fileRef = A91193D71FF7C2F30058042D /* button_acercademi.png */; };
+		A91193DA1FF80D060058042D /* UIViewController+Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91193D91FF80D060058042D /* UIViewController+Background.swift */; };
+		A91193DE1FF80ED90058042D /* button_cache.png in Resources */ = {isa = PBXBuildFile; fileRef = A91193DB1FF80ED90058042D /* button_cache.png */; };
+		A91193DF1FF80ED90058042D /* button_cerrarsesion.png in Resources */ = {isa = PBXBuildFile; fileRef = A91193DC1FF80ED90058042D /* button_cerrarsesion.png */; };
+		A91193E01FF80ED90058042D /* button_procon.png in Resources */ = {isa = PBXBuildFile; fileRef = A91193DD1FF80ED90058042D /* button_procon.png */; };
 		A91278981FEFA17900B6A074 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278971FEFA17900B6A074 /* PlayersViewController.swift */; };
 		A912789A1FEFB43E00B6A074 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278991FEFB43E00B6A074 /* PlayerCell.swift */; };
 		A912789E1FEFCD9000B6A074 /* fondo-players.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A912789C1FEFCD9000B6A074 /* fondo-players.jpg */; };
@@ -60,6 +64,10 @@
 		A91193D11FF77BD50058042D /* CommonStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStubs.swift; sourceTree = "<group>"; };
 		A91193D41FF7A1A60058042D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		A91193D71FF7C2F30058042D /* button_acercademi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_acercademi.png; sourceTree = "<group>"; };
+		A91193D91FF80D060058042D /* UIViewController+Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Background.swift"; sourceTree = "<group>"; };
+		A91193DB1FF80ED90058042D /* button_cache.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_cache.png; sourceTree = "<group>"; };
+		A91193DC1FF80ED90058042D /* button_cerrarsesion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_cerrarsesion.png; sourceTree = "<group>"; };
+		A91193DD1FF80ED90058042D /* button_procon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_procon.png; sourceTree = "<group>"; };
 		A91278971FEFA17900B6A074 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		A91278991FEFB43E00B6A074 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		A912789C1FEFCD9000B6A074 /* fondo-players.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fondo-players.jpg"; sourceTree = "<group>"; };
@@ -121,6 +129,9 @@
 		A91193D61FF7C2BD0058042D /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				A91193DB1FF80ED90058042D /* button_cache.png */,
+				A91193DC1FF80ED90058042D /* button_cerrarsesion.png */,
+				A91193DD1FF80ED90058042D /* button_procon.png */,
 				A91193D71FF7C2F30058042D /* button_acercademi.png */,
 			);
 			path = Dashboard;
@@ -232,6 +243,7 @@
 				A9A1E9511FEC61C700CE2D76 /* MyAccountViewController.swift */,
 				A9A1E9521FEC61C700CE2D76 /* MyAccountViewController.xib */,
 				A91278971FEFA17900B6A074 /* PlayersViewController.swift */,
+				A91193D91FF80D060058042D /* UIViewController+Background.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -345,6 +357,8 @@
 				A9A1E9281FEC5B5E00CE2D76 /* LaunchScreen.storyboard in Resources */,
 				A9A1E9251FEC5B5E00CE2D76 /* Assets.xcassets in Resources */,
 				A9A1E94B1FEC5F1900CE2D76 /* imput_form.png in Resources */,
+				A91193DF1FF80ED90058042D /* button_cerrarsesion.png in Resources */,
+				A91193DE1FF80ED90058042D /* button_cache.png in Resources */,
 				A912789F1FEFCD9000B6A074 /* celda-player.png in Resources */,
 				A9A1E9441FEC5CB700CE2D76 /* background_login.jpg in Resources */,
 				A9A1E9501FEC617C00CE2D76 /* RootViewController.xib in Resources */,
@@ -353,6 +367,7 @@
 				A912789E1FEFCD9000B6A074 /* fondo-players.jpg in Resources */,
 				A952165A1FF44BE200849825 /* placeholder.jpg in Resources */,
 				A9A1E9541FEC61C700CE2D76 /* MyAccountViewController.xib in Resources */,
+				A91193E01FF80ED90058042D /* button_procon.png in Resources */,
 				A9A1E94A1FEC5F1900CE2D76 /* button_ok.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +400,7 @@
 				A91278981FEFA17900B6A074 /* PlayersViewController.swift in Sources */,
 				A91168A31FF6C03C00F5C0CD /* HttpRequester.swift in Sources */,
 				A9A1E94F1FEC617C00CE2D76 /* RootViewController.swift in Sources */,
+				A91193DA1FF80D060058042D /* UIViewController+Background.swift in Sources */,
 				A91193D51FF7A1A60058042D /* Alert.swift in Sources */,
 				A9A1E91E1FEC5B5D00CE2D76 /* AppDelegate.swift in Sources */,
 			);

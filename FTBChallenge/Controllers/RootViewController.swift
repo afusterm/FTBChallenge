@@ -11,6 +11,7 @@ import UIKit
 class RootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        backgroundImage(named: "background_login.jpg")
     }
 
     override func didReceiveMemoryWarning() {

@@ -20,7 +20,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordEntry.text = "challengeFTB2017"
         
         navigationController?.isNavigationBarHidden = true
-        setupBackgroundImage()
+        backgroundImage(named: "background_login.jpg")
         userEntry.delegate = self
         passwordEntry.delegate = self
     }
@@ -70,12 +70,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Helper methods
     
+    /* XXX
     private func setupBackgroundImage() {
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "background_login.jpg")
         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
         view.insertSubview(backgroundImage, at: 0)
-    }
+    }*/
     
     private func validateUserName(userName: String) -> Bool {
         if (userName.isEmpty) {
