@@ -9,6 +9,7 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    public static let previousSessionKey = "previousSession"
     
     @IBOutlet weak var userEntry: UITextField!
     @IBOutlet weak var passwordEntry: UITextField!
@@ -41,6 +42,7 @@ class LoginViewController: UIViewController {
         let loginInteractor = LoginInteractor()
         loginInteractor.login(info: userInfo, closure: {(isValid: Bool, message: String?) -> Void in
             if (isValid) {
+                self.saveSession()
                 DispatchQueue.main.async {
                     let rootVC = RootViewController()
                     rootVC.navigationItem.hidesBackButton = true
@@ -54,7 +56,7 @@ class LoginViewController: UIViewController {
     
     // MARK: Helper methods
     
-    func validateUserName(userName: String) -> Bool {
+    private func validateUserName(userName: String) -> Bool {
         if (userName.isEmpty) {
             showAlert(on: self, title: "Usuario vacío", message: "Introduzca nombre de usuario")
             return false
@@ -63,7 +65,7 @@ class LoginViewController: UIViewController {
         return true
     }
     
-    func validatePassword(password: String) -> Bool {
+    private func validatePassword(password: String) -> Bool {
         if (password.isEmpty) {
             showAlert(on: self, title: "Contraseña vacía", message: "Introduzca contraseña")
             return false
@@ -71,12 +73,9 @@ class LoginViewController: UIViewController {
         
         return true
     }
-    /* XXX
-    func showAlert(title: String, message: String) {
-        DispatchQueue.main.async {
-            let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }
-    }*/
+    
+    private func saveSession() {
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(true, forKey: LoginViewController.previousSessionKey)
+    }
 }

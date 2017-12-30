@@ -43,6 +43,12 @@ class RootViewController: UIViewController {
     }
     
     @IBAction func closeSession(_ sender: Any) {
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(false, forKey: LoginViewController.previousSessionKey)
+        
+        let loginViewController = LoginViewController()
+        loginViewController.navigationItem.hidesBackButton = true
+        navigationController?.pushViewController(loginViewController, animated: true)
     }
     
     // MARK: Helpers

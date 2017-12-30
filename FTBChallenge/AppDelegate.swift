@@ -49,7 +49,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: Properties
     
     var hasPreviousSession: Bool {
-        return false
+        let userDefs = UserDefaults.standard
+        return userDefs.bool(forKey: LoginViewController.previousSessionKey)
     }
     
     // MARK: Helper methods
