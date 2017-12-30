@@ -11,12 +11,21 @@ import UIKit
 class PlayersViewController: UIViewController {
     private let reuseIdentifier = "PlayerCell"
     
-    var collectionView: UICollectionView!
-    var players: Players!
+    private var collectionView: UICollectionView!
+    private var players: Players
+    
+    init(players: Players) {
+        self.players = players
+        super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        downloadPlayers()
+        setupCollectionView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,17 +33,7 @@ class PlayersViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func downloadPlayers() {
-        let playersInteractor = PlayersInteractor()
-        playersInteractor.downloadSignings(closure: {(players: Players) -> Void in
-            self.players = players
-            DispatchQueue.main.async {
-                self.setupCollectionView()
-            }
-        })
-    }
-    
-    func setupCollectionView() {
+    private func setupCollectionView() {
         let layout = createLayout()
         collectionView = UICollectionView(frame: view.frame, collectionViewLayout: layout)
         collectionView.register(PlayerCell.self, forCellWithReuseIdentifier: reuseIdentifier)
@@ -48,7 +47,7 @@ class PlayersViewController: UIViewController {
         view.addSubview(collectionView)
     }
     
-    func createLayout() -> UICollectionViewLayout {
+    private func createLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 1
         layout.minimumInteritemSpacing = 1

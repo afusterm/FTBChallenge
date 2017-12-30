@@ -11,43 +11,22 @@ import UIKit
 
 class PlayersInteractor {
     private let signingsUrl = "http://ftbsports.com/ios/api/signings.php"
+    private var requester: HttpRequester
     
-    func downloadSignings(closure: @escaping (_: Players) -> Void){
-        post(parse: {(result) -> Void in
-            let players = self.decodePlayersResponse(response: result)
-            closure(players)
-        })
-        /* XXX
-        let players = Players()
-        players.add(player: Player(name: "Ozil", image: UIImage(named: "ozil.png")))
-        players.add(player: Player(name: "Iker Casillas", image: UIImage(named: "ozil.png")))
-        players.add(player: Player(name: "Ronaldo", image: UIImage(named: "ozil.png")))
-        players.add(player: Player(name: "Messi", image: UIImage(named: "ozil.png")))
-        players.add(player: Player(name: "Isco", image: UIImage(named: "ozil.png")))
-        players.add(player: Player(name: "Paco", image: UIImage(named: "ozil.png")))
-        
-        closure(players)
-        */
+    init(requester: HttpRequester = URLSession(configuration: URLSessionConfiguration.default)) {
+        self.requester = requester
     }
     
-    private func post(parse: @escaping (_ result: JSONDictionary) -> Void) {
-        let session = URLSession.shared
+    func downloadSignings(closure: @escaping (_: Players) -> Void) {
         var request = URLRequest(url: URL(string: signingsUrl)!)
         request.httpMethod = "POST"
-        
-        let task = session.dataTask(with: request) { (data, response, error) in
-            if (error != nil) {
-                print("Error PlayersInteractor.post: ", error.debugDescription)
-                return
-            }
-            
-            let dictionary = try? JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
+        requester.data(request: request) { (data) in
+            let dictionary = try? JSONSerialization.jsonObject(with: data, options: [])
             if let dict = dictionary as? JSONDictionary {
-                parse(dict)
+                let playersDecoded = self.decodePlayersResponse(response: dict)
+                closure(playersDecoded)
             }
         }
-        
-        task.resume()
     }
     
     private func decodePlayersResponse(response: JSONDictionary) -> Players {

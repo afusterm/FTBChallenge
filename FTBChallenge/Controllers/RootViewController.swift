@@ -9,9 +9,6 @@
 import UIKit
 
 class RootViewController: UIViewController {
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,7 +27,16 @@ class RootViewController: UIViewController {
     }
     
     @IBAction func goToPlayers(_ sender: Any) {
-        navigationController?.pushViewController(PlayersViewController(), animated: true)
+        let playersInteractor = PlayersInteractor()
+        playersInteractor.downloadSignings(closure: {(players: Players) -> Void in
+            if (!self.validatePlayersAreNotEmpty(players: players)) {
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.navigationController?.pushViewController(PlayersViewController(players: players), animated: true)
+            }
+        })
     }
     
     @IBAction func emptyCache(_ sender: Any) {
@@ -39,4 +45,17 @@ class RootViewController: UIViewController {
     @IBAction func closeSession(_ sender: Any) {
     }
     
+    // MARK: Helpers
+    
+    private func validatePlayersAreNotEmpty(players: Players) -> Bool {
+        if (players.count > 0) {
+            return true
+        }
+        
+        showAlert(on: self,
+                  title: "Error",
+                  message: "No se pudieron descargar jugadores. Vuelva a intentarlo más tarde")
+        
+        return false
+    }
 }

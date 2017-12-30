@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A91168A31FF6C03C00F5C0CD /* HttpRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91168A21FF6C03C00F5C0CD /* HttpRequester.swift */; };
+		A91168A51FF6C94800F5C0CD /* HttpRequester+URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91168A41FF6C94800F5C0CD /* HttpRequester+URLSession.swift */; };
+		A91168A71FF6FF6300F5C0CD /* LoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91168A61FF6FF6300F5C0CD /* LoginInfo.swift */; };
+		A91168A91FF702B200F5C0CD /* PlayersInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91168A81FF702B200F5C0CD /* PlayersInteractorTests.swift */; };
+		A91193D21FF77BD50058042D /* CommonStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91193D11FF77BD50058042D /* CommonStubs.swift */; };
+		A91193D51FF7A1A60058042D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91193D41FF7A1A60058042D /* Alert.swift */; };
 		A91278981FEFA17900B6A074 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278971FEFA17900B6A074 /* PlayersViewController.swift */; };
 		A912789A1FEFB43E00B6A074 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278991FEFB43E00B6A074 /* PlayerCell.swift */; };
 		A912789E1FEFCD9000B6A074 /* fondo-players.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A912789C1FEFCD9000B6A074 /* fondo-players.jpg */; };
@@ -14,8 +20,8 @@
 		A91278A31FF00C4F00B6A074 /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278A21FF00C4F00B6A074 /* Players.swift */; };
 		A91278A81FF011D000B6A074 /* PlayersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278A71FF011D000B6A074 /* PlayersInteractor.swift */; };
 		A91278AA1FF0153500B6A074 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278A91FF0153500B6A074 /* Player.swift */; };
-		A91C80681FEED2520090AFDC /* ozil.png in Resources */ = {isa = PBXBuildFile; fileRef = A91C80671FEED2510090AFDC /* ozil.png */; };
 		A952165A1FF44BE200849825 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A95216591FF44BE100849825 /* placeholder.jpg */; };
+		A9567DFA1FF6A9B100968E3D /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9567DF91FF6A9B100968E3D /* LoginInteractorTests.swift */; };
 		A95838ED1FEDB54F0014D869 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95838EC1FEDB54F0014D869 /* LoginInteractor.swift */; };
 		A99625F91FF59D660044012D /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99625F81FF59D660044012D /* UIImageView+Cache.swift */; };
 		A9A1E91E1FEC5B5D00CE2D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E91D1FEC5B5D00CE2D76 /* AppDelegate.swift */; };
@@ -23,7 +29,6 @@
 		A9A1E9231FEC5B5D00CE2D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9211FEC5B5D00CE2D76 /* Main.storyboard */; };
 		A9A1E9251FEC5B5E00CE2D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9241FEC5B5E00CE2D76 /* Assets.xcassets */; };
 		A9A1E9281FEC5B5E00CE2D76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9261FEC5B5E00CE2D76 /* LaunchScreen.storyboard */; };
-		A9A1E9331FEC5B5E00CE2D76 /* FTBChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E9321FEC5B5E00CE2D76 /* FTBChallengeTests.swift */; };
 		A9A1E9401FEC5C6C00CE2D76 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E93E1FEC5C6C00CE2D76 /* LoginViewController.swift */; };
 		A9A1E9411FEC5C6C00CE2D76 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E93F1FEC5C6C00CE2D76 /* LoginViewController.xib */; };
 		A9A1E9441FEC5CB700CE2D76 /* background_login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E9431FEC5CB700CE2D76 /* background_login.jpg */; };
@@ -47,6 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A91168A21FF6C03C00F5C0CD /* HttpRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequester.swift; sourceTree = "<group>"; };
+		A91168A41FF6C94800F5C0CD /* HttpRequester+URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpRequester+URLSession.swift"; sourceTree = "<group>"; };
+		A91168A61FF6FF6300F5C0CD /* LoginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfo.swift; sourceTree = "<group>"; };
+		A91168A81FF702B200F5C0CD /* PlayersInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersInteractorTests.swift; sourceTree = "<group>"; };
+		A91193D11FF77BD50058042D /* CommonStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStubs.swift; sourceTree = "<group>"; };
+		A91193D41FF7A1A60058042D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		A91278971FEFA17900B6A074 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		A91278991FEFB43E00B6A074 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		A912789C1FEFCD9000B6A074 /* fondo-players.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fondo-players.jpg"; sourceTree = "<group>"; };
@@ -54,8 +65,8 @@
 		A91278A21FF00C4F00B6A074 /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
 		A91278A71FF011D000B6A074 /* PlayersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersInteractor.swift; sourceTree = "<group>"; };
 		A91278A91FF0153500B6A074 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		A91C80671FEED2510090AFDC /* ozil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ozil.png; sourceTree = "<group>"; };
 		A95216591FF44BE100849825 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
+		A9567DF91FF6A9B100968E3D /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		A95838EC1FEDB54F0014D869 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		A99625F81FF59D660044012D /* UIImageView+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
 		A9A1E91A1FEC5B5D00CE2D76 /* FTBChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTBChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +77,6 @@
 		A9A1E9271FEC5B5E00CE2D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9A1E9291FEC5B5E00CE2D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9A1E92E1FEC5B5E00CE2D76 /* FTBChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTBChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9A1E9321FEC5B5E00CE2D76 /* FTBChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTBChallengeTests.swift; sourceTree = "<group>"; };
 		A9A1E9341FEC5B5E00CE2D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9A1E93E1FEC5C6C00CE2D76 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A9A1E93F1FEC5C6C00CE2D76 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -98,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A91168A11FF6C02900F5C0CD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A91168A21FF6C03C00F5C0CD /* HttpRequester.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		A912789B1FEFCD6900B6A074 /* Players */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				A91278991FEFB43E00B6A074 /* PlayerCell.swift */,
+				A91193D41FF7A1A60058042D /* Alert.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,6 +149,7 @@
 			children = (
 				A91278A21FF00C4F00B6A074 /* Players.swift */,
 				A91278A91FF0153500B6A074 /* Player.swift */,
+				A91168A61FF6FF6300F5C0CD /* LoginInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				A99625F81FF59D660044012D /* UIImageView+Cache.swift */,
+				A91168A41FF6C94800F5C0CD /* HttpRequester+URLSession.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -163,6 +184,7 @@
 		A9A1E91C1FEC5B5D00CE2D76 /* FTBChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				A91168A11FF6C02900F5C0CD /* Network */,
 				A99625F61FF592560044012D /* Extensions */,
 				A91278A61FF011B000B6A074 /* Interactors */,
 				A91C803B1FEE59710090AFDC /* Views */,
@@ -182,8 +204,10 @@
 		A9A1E9311FEC5B5E00CE2D76 /* FTBChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				A9A1E9321FEC5B5E00CE2D76 /* FTBChallengeTests.swift */,
 				A9A1E9341FEC5B5E00CE2D76 /* Info.plist */,
+				A9567DF91FF6A9B100968E3D /* LoginInteractorTests.swift */,
+				A91168A81FF702B200F5C0CD /* PlayersInteractorTests.swift */,
+				A91193D11FF77BD50058042D /* CommonStubs.swift */,
 			);
 			path = FTBChallengeTests;
 			sourceTree = "<group>";
@@ -206,7 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				A912789B1FEFCD6900B6A074 /* Players */,
-				A91C80671FEED2510090AFDC /* ozil.png */,
 				A9A1E94C1FEC5F2800CE2D76 /* Login */,
 			);
 			path = Resources;
@@ -312,7 +335,6 @@
 				A9A1E94B1FEC5F1900CE2D76 /* imput_form.png in Resources */,
 				A912789F1FEFCD9000B6A074 /* celda-player.png in Resources */,
 				A9A1E9441FEC5CB700CE2D76 /* background_login.jpg in Resources */,
-				A91C80681FEED2520090AFDC /* ozil.png in Resources */,
 				A9A1E9501FEC617C00CE2D76 /* RootViewController.xib in Resources */,
 				A9A1E9231FEC5B5D00CE2D76 /* Main.storyboard in Resources */,
 				A9A1E9461FEC5CEA00CE2D76 /* logo_ftb.png in Resources */,
@@ -340,14 +362,18 @@
 				A91278AA1FF0153500B6A074 /* Player.swift in Sources */,
 				A91278A31FF00C4F00B6A074 /* Players.swift in Sources */,
 				A912789A1FEFB43E00B6A074 /* PlayerCell.swift in Sources */,
+				A91168A51FF6C94800F5C0CD /* HttpRequester+URLSession.swift in Sources */,
 				A9A1E9401FEC5C6C00CE2D76 /* LoginViewController.swift in Sources */,
 				A9A1E9201FEC5B5D00CE2D76 /* ViewController.swift in Sources */,
 				A99625F91FF59D660044012D /* UIImageView+Cache.swift in Sources */,
 				A95838ED1FEDB54F0014D869 /* LoginInteractor.swift in Sources */,
 				A91278A81FF011D000B6A074 /* PlayersInteractor.swift in Sources */,
+				A91168A71FF6FF6300F5C0CD /* LoginInfo.swift in Sources */,
 				A9A1E9531FEC61C700CE2D76 /* MyAccountViewController.swift in Sources */,
 				A91278981FEFA17900B6A074 /* PlayersViewController.swift in Sources */,
+				A91168A31FF6C03C00F5C0CD /* HttpRequester.swift in Sources */,
 				A9A1E94F1FEC617C00CE2D76 /* RootViewController.swift in Sources */,
+				A91193D51FF7A1A60058042D /* Alert.swift in Sources */,
 				A9A1E91E1FEC5B5D00CE2D76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +382,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9A1E9331FEC5B5E00CE2D76 /* FTBChallengeTests.swift in Sources */,
+				A91193D21FF77BD50058042D /* CommonStubs.swift in Sources */,
+				A9567DFA1FF6A9B100968E3D /* LoginInteractorTests.swift in Sources */,
+				A91168A91FF702B200F5C0CD /* PlayersInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

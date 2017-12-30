@@ -12,7 +12,7 @@ typealias JSONObject = AnyObject
 typealias JSONDictionary = [String: JSONObject]
 typealias JSONArray = [JSONDictionary]
 
-struct LoginResponse {
+private struct LoginResponse {
     var isValid: Bool
     var message: String
     
@@ -25,32 +25,31 @@ struct LoginResponse {
 class LoginInteractor {
     private let loginUrl = "http://ftbsports.com/ios/api/login.php"
     
-    func login(userName: String, password: String, closure: @escaping (_ isValid: Bool, _ message: String?) -> Void) {
-        post(user: userName, password: password, parse: {(result) -> Void in
-            let loginResponse = self.decodeLoginResponse(response: result)
-            closure(loginResponse.isValid, loginResponse.message)
-        })
+    private var requester: HttpRequester
+    
+    public init(requester: HttpRequester = URLSession(configuration: URLSessionConfiguration.default)) {
+        self.requester = requester
     }
     
-    private func post(user: String, password: String, parse: @escaping (_ result: JSONDictionary) -> Void) {
-        let session = URLSession.shared
+    func login(info: LoginInfo, closure: @escaping (_ isValid: Bool, _ message: String?) -> Void) {
+        let request = createLoginRequest(info: info)
+        
+        requester.data(request: request) { (data) in
+            let dictionary = try? JSONSerialization.jsonObject(with: data, options: [])
+            if let dict = dictionary as? JSONDictionary {
+                let loginResponse = self.decodeLoginResponse(response: dict)
+                closure(loginResponse.isValid, loginResponse.message)
+            }
+        }
+    }
+    
+    private func createLoginRequest(info: LoginInfo) -> URLRequest {
         var request = URLRequest(url: URL(string: loginUrl)!)
-        let params = "user=\(user)&password=\(password)"
+        let params = "user=\(info.user)&password=\(info.password)"
         request.httpMethod = "POST"
         request.httpBody = params.data(using: .utf8)
         
-        let task = session.dataTask(with: request) { (data, response, error) in
-            if let errorObject = error {
-                print("Error en tarea: ", errorObject.localizedDescription)
-            }
-            
-            let dictionary = try? JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
-            if let dict = dictionary as? JSONDictionary {
-                parse(dict)
-            }
-        }
-        
-        task.resume()
+        return request
     }
     
     private func decodeLoginResponse(response: JSONDictionary) -> LoginResponse {

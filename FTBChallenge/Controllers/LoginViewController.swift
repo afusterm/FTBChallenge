@@ -26,7 +26,6 @@ class LoginViewController: UIViewController {
     // MARK: Actions
     
     @IBAction func doLogin(_ sender: Any) {
-        let loginInteractor = LoginInteractor()
         let userName = userEntry.text!
         let password = passwordEntry.text!
         
@@ -38,7 +37,9 @@ class LoginViewController: UIViewController {
             return
         }
         
-        loginInteractor.login(userName: userName, password: password, closure: {(isValid: Bool, message: String?) -> Void in
+        let userInfo = LoginInfo(user: userName, password: password)
+        let loginInteractor = LoginInteractor()
+        loginInteractor.login(info: userInfo, closure: {(isValid: Bool, message: String?) -> Void in
             if (isValid) {
                 DispatchQueue.main.async {
                     let rootVC = RootViewController()
@@ -46,7 +47,7 @@ class LoginViewController: UIViewController {
                     self.navigationController?.pushViewController(rootVC, animated: true)
                 }
             } else {
-                self.showAlert(title: "Error en login", message: message!)
+                showAlert(on: self, title: "Error en login", message: message!)
             }
         })
     }
@@ -55,7 +56,7 @@ class LoginViewController: UIViewController {
     
     func validateUserName(userName: String) -> Bool {
         if (userName.isEmpty) {
-            showAlert(title: "Usuario vacío", message: "Introduzca nombre de usuario")
+            showAlert(on: self, title: "Usuario vacío", message: "Introduzca nombre de usuario")
             return false
         }
         
@@ -64,18 +65,18 @@ class LoginViewController: UIViewController {
     
     func validatePassword(password: String) -> Bool {
         if (password.isEmpty) {
-            showAlert(title: "Contraseña vacía", message: "Introduzca contraseña")
+            showAlert(on: self, title: "Contraseña vacía", message: "Introduzca contraseña")
             return false
         }
         
         return true
     }
-    
+    /* XXX
     func showAlert(title: String, message: String) {
         DispatchQueue.main.async {
             let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
-    }
+    }*/
 }
