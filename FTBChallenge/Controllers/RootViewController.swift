@@ -11,13 +11,15 @@ import UIKit
 class RootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
     }
     
     // MARK: Actions
@@ -47,7 +49,6 @@ class RootViewController: UIViewController {
         userDefaults.set(false, forKey: LoginViewController.previousSessionKey)
         
         let loginViewController = LoginViewController()
-        loginViewController.navigationItem.hidesBackButton = true
         navigationController?.pushViewController(loginViewController, animated: true)
     }
     

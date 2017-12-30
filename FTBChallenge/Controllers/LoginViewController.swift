@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     public static let previousSessionKey = "previousSession"
     
     @IBOutlet weak var userEntry: UITextField!
@@ -18,10 +18,24 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         userEntry.text = "ftbchallenge"
         passwordEntry.text = "challengeFTB2017"
+        
+        navigationController?.isNavigationBarHidden = true
+        setupBackgroundImage()
+        userEntry.delegate = self
+        passwordEntry.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    // MARK: Delegates
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        userEntry.resignFirstResponder()
+        passwordEntry.resignFirstResponder()
+        
+        return true
     }
     
     // MARK: Actions
@@ -55,6 +69,13 @@ class LoginViewController: UIViewController {
     }
     
     // MARK: Helper methods
+    
+    private func setupBackgroundImage() {
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "background_login.jpg")
+        backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
+        view.insertSubview(backgroundImage, at: 0)
+    }
     
     private func validateUserName(userName: String) -> Bool {
         if (userName.isEmpty) {

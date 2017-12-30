@@ -25,6 +25,7 @@ class PlayersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = false
         setupCollectionView()
     }
 

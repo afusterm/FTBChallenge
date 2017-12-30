@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,37 +19,24 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USUARIO" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQq-0J-Jdk" userLabel="UserEntry">
-                    <rect key="frame" x="48" y="398" width="272" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="Tsb-ta-Thg"/>
-                        <constraint firstAttribute="width" secondItem="oQq-0J-Jdk" secondAttribute="height" multiplier="136:15" id="WPr-Yy-xmc"/>
-                        <constraint firstAttribute="width" constant="272" id="uRR-gW-3bQ"/>
-                    </constraints>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USUARIO" textAlignment="natural" minimumFontSize="17" background="imput_form.png" translatesAutoresizingMaskIntoConstraints="NO" id="oQq-0J-Jdk" userLabel="UserEntry">
+                    <rect key="frame" x="15" y="373" width="290" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CONTRASEÑA" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ifv-aV-zwP" userLabel="PasswordTextField">
-                    <rect key="frame" x="48" y="458" width="272" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="48Q-0q-mqT"/>
-                        <constraint firstAttribute="width" constant="272" id="6nP-Zn-2c5"/>
-                        <constraint firstAttribute="width" secondItem="Ifv-aV-zwP" secondAttribute="height" multiplier="136:15" id="sBk-E7-nGv"/>
-                    </constraints>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CONTRASEÑA" minimumFontSize="17" background="imput_form.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ifv-aV-zwP" userLabel="PasswordTextField">
+                    <rect key="frame" x="15" y="423" width="290" height="30"/>
                     <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dz7-fy-qq4">
-                    <rect key="frame" x="85" y="591" width="206" height="30"/>
+                    <rect key="frame" x="15" y="503" width="290" height="50"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="64H-gc-Wxc"/>
-                        <constraint firstAttribute="width" constant="206" id="XYM-nZ-xFq"/>
-                        <constraint firstAttribute="width" secondItem="dz7-fy-qq4" secondAttribute="height" multiplier="103:15" id="uv9-x8-oYQ"/>
+                        <constraint firstAttribute="height" constant="50" id="I0t-NW-Iiq"/>
                     </constraints>
                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                     <state key="normal" title="CONTINUAR" backgroundImage="button_ok.png">
@@ -61,18 +46,28 @@
                         <action selector="doLogin:" destination="-1" eventType="touchDown" id="9M2-Bg-uR3"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_ftb.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Jr-E4-bLt">
+                    <rect key="frame" x="15" y="20" width="290" height="260"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="260" id="8YS-aW-QoO"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="dz7-fy-qq4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="69" id="5fe-ew-1Is"/>
-                <constraint firstItem="oQq-0J-Jdk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="32" id="BWm-cQ-0Zh"/>
-                <constraint firstAttribute="bottomMargin" secondItem="dz7-fy-qq4" secondAttribute="bottom" constant="46" id="FgK-9W-bXS"/>
-                <constraint firstItem="Ifv-aV-zwP" firstAttribute="top" secondItem="oQq-0J-Jdk" secondAttribute="bottom" constant="30" id="SvM-e9-zsV"/>
-                <constraint firstAttribute="trailingMargin" secondItem="dz7-fy-qq4" secondAttribute="trailing" constant="68" id="dRD-Sv-s8x"/>
-                <constraint firstItem="Ifv-aV-zwP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="32" id="gFc-JS-ZAe"/>
-                <constraint firstItem="dz7-fy-qq4" firstAttribute="top" secondItem="Ifv-aV-zwP" secondAttribute="bottom" constant="104" id="kf7-YM-m3I"/>
-                <constraint firstAttribute="trailingMargin" secondItem="Ifv-aV-zwP" secondAttribute="trailing" constant="39" id="qao-P2-Xjt"/>
-                <constraint firstAttribute="trailingMargin" secondItem="oQq-0J-Jdk" secondAttribute="trailing" constant="39" id="xqH-Nq-KoB"/>
+                <constraint firstItem="dz7-fy-qq4" firstAttribute="top" secondItem="Ifv-aV-zwP" secondAttribute="bottom" constant="50" id="7bh-RM-Abr"/>
+                <constraint firstItem="4Jr-E4-bLt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9ws-k2-2Yj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dz7-fy-qq4" secondAttribute="trailing" constant="15" id="Dsq-aV-6II"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ifv-aV-zwP" secondAttribute="trailing" constant="15" id="Hcl-So-yRa"/>
+                <constraint firstItem="Ifv-aV-zwP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="ItQ-jG-4mM"/>
+                <constraint firstAttribute="trailing" secondItem="4Jr-E4-bLt" secondAttribute="trailing" constant="15" id="JuU-hE-eJI"/>
+                <constraint firstItem="4Jr-E4-bLt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="LNs-UD-78F"/>
+                <constraint firstItem="4Jr-E4-bLt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="aHc-9F-B2T"/>
+                <constraint firstItem="oQq-0J-Jdk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="dQJ-lj-j21"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oQq-0J-Jdk" secondAttribute="trailing" constant="15" id="fQj-Ou-hFg"/>
+                <constraint firstItem="Ifv-aV-zwP" firstAttribute="top" secondItem="oQq-0J-Jdk" secondAttribute="bottom" constant="20" id="m09-G2-IkX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dz7-fy-qq4" secondAttribute="bottom" constant="15" id="mq0-Hl-5cw"/>
+                <constraint firstItem="dz7-fy-qq4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="vpE-By-dne"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="26.5" y="52.5"/>
@@ -80,5 +75,7 @@
     </objects>
     <resources>
         <image name="button_ok.png" width="436" height="64"/>
+        <image name="imput_form.png" width="435" height="70"/>
+        <image name="logo_ftb.png" width="452" height="515"/>
     </resources>
 </document>
