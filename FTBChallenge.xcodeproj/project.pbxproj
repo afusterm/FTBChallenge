@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A901F7281FF8CC440006A231 /* Linkedin.png in Resources */ = {isa = PBXBuildFile; fileRef = A901F7271FF8CC430006A231 /* Linkedin.png */; };
 		A91168A31FF6C03C00F5C0CD /* HttpRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91168A21FF6C03C00F5C0CD /* HttpRequester.swift */; };
 		A91168A51FF6C94800F5C0CD /* HttpRequester+URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91168A41FF6C94800F5C0CD /* HttpRequester+URLSession.swift */; };
 		A91168A71FF6FF6300F5C0CD /* LoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91168A61FF6FF6300F5C0CD /* LoginInfo.swift */; };
@@ -18,6 +19,7 @@
 		A91193DE1FF80ED90058042D /* button_cache.png in Resources */ = {isa = PBXBuildFile; fileRef = A91193DB1FF80ED90058042D /* button_cache.png */; };
 		A91193DF1FF80ED90058042D /* button_cerrarsesion.png in Resources */ = {isa = PBXBuildFile; fileRef = A91193DC1FF80ED90058042D /* button_cerrarsesion.png */; };
 		A91193E01FF80ED90058042D /* button_procon.png in Resources */ = {isa = PBXBuildFile; fileRef = A91193DD1FF80ED90058042D /* button_procon.png */; };
+		A91193E31FF82A6B0058042D /* me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A91193E21FF82A6B0058042D /* me.jpg */; };
 		A91278981FEFA17900B6A074 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278971FEFA17900B6A074 /* PlayersViewController.swift */; };
 		A912789A1FEFB43E00B6A074 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278991FEFB43E00B6A074 /* PlayerCell.swift */; };
 		A912789E1FEFCD9000B6A074 /* fondo-players.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A912789C1FEFCD9000B6A074 /* fondo-players.jpg */; };
@@ -57,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A901F7271FF8CC430006A231 /* Linkedin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Linkedin.png; sourceTree = "<group>"; };
 		A91168A21FF6C03C00F5C0CD /* HttpRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequester.swift; sourceTree = "<group>"; };
 		A91168A41FF6C94800F5C0CD /* HttpRequester+URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpRequester+URLSession.swift"; sourceTree = "<group>"; };
 		A91168A61FF6FF6300F5C0CD /* LoginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfo.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		A91193DB1FF80ED90058042D /* button_cache.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_cache.png; sourceTree = "<group>"; };
 		A91193DC1FF80ED90058042D /* button_cerrarsesion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_cerrarsesion.png; sourceTree = "<group>"; };
 		A91193DD1FF80ED90058042D /* button_procon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_procon.png; sourceTree = "<group>"; };
+		A91193E21FF82A6B0058042D /* me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = me.jpg; sourceTree = "<group>"; };
 		A91278971FEFA17900B6A074 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		A91278991FEFB43E00B6A074 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		A912789C1FEFCD9000B6A074 /* fondo-players.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fondo-players.jpg"; sourceTree = "<group>"; };
@@ -135,6 +139,15 @@
 				A91193D71FF7C2F30058042D /* button_acercademi.png */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		A91193E11FF82A4D0058042D /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				A901F7271FF8CC430006A231 /* Linkedin.png */,
+				A91193E21FF82A6B0058042D /* me.jpg */,
+			);
+			path = MyAccount;
 			sourceTree = "<group>";
 		};
 		A912789B1FEFCD6900B6A074 /* Players */ = {
@@ -251,6 +264,7 @@
 		A9A1E9421FEC5C9A00CE2D76 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A91193E11FF82A4D0058042D /* MyAccount */,
 				A91193D61FF7C2BD0058042D /* Dashboard */,
 				A912789B1FEFCD6900B6A074 /* Players */,
 				A9A1E94C1FEC5F2800CE2D76 /* Login */,
@@ -356,9 +370,11 @@
 				A91193D81FF7C2F30058042D /* button_acercademi.png in Resources */,
 				A9A1E9281FEC5B5E00CE2D76 /* LaunchScreen.storyboard in Resources */,
 				A9A1E9251FEC5B5E00CE2D76 /* Assets.xcassets in Resources */,
+				A901F7281FF8CC440006A231 /* Linkedin.png in Resources */,
 				A9A1E94B1FEC5F1900CE2D76 /* imput_form.png in Resources */,
 				A91193DF1FF80ED90058042D /* button_cerrarsesion.png in Resources */,
 				A91193DE1FF80ED90058042D /* button_cache.png in Resources */,
+				A91193E31FF82A6B0058042D /* me.jpg in Resources */,
 				A912789F1FEFCD9000B6A074 /* celda-player.png in Resources */,
 				A9A1E9441FEC5CB700CE2D76 /* background_login.jpg in Resources */,
 				A9A1E9501FEC617C00CE2D76 /* RootViewController.xib in Resources */,

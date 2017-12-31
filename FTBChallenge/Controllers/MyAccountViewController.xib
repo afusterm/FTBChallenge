@@ -1,41 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyAccountViewController" customModule="FTBChallenge" customModuleProvider="target">
             <connections>
+                <outlet property="accountImageView" destination="aey-Oy-K2k" id="Cod-eH-KBy"/>
+                <outlet property="emailButton" destination="Ax5-3y-qt1" id="MW3-Ri-aY2"/>
+                <outlet property="phoneButton" destination="F6j-nD-eda" id="l9L-3a-ONf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acerca de mí" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfP-Wc-KGY">
-                    <rect key="frame" x="140.5" y="104" width="99.5" height="21"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aey-Oy-K2k">
+                    <rect key="frame" x="75" y="80" width="170" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="RL8-R0-OFN"/>
+                        <constraint firstAttribute="height" constant="170" id="rJx-Bc-pNf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alejandro Fuster Miralles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwZ-VV-ykS">
+                    <rect key="frame" x="16" y="313" width="189" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" white="0.79857219830000004" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ax5-3y-qt1">
+                    <rect key="frame" x="16" y="342" width="135" height="30"/>
+                    <state key="normal" title="afusmir@gmail.com">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="openMail:" destination="-1" eventType="touchUpInside" id="Xjm-2q-D2w"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6j-nD-eda">
+                    <rect key="frame" x="16" y="372" width="83" height="30"/>
+                    <state key="normal" title="669457354"/>
+                    <connections>
+                        <action selector="callToPhone:" destination="-1" eventType="touchUpInside" id="a2Y-yz-eU4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mF8-tS-II5">
+                    <rect key="frame" x="16" y="410" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="78p-5k-Tou"/>
+                        <constraint firstAttribute="height" constant="50" id="q3i-6P-OUI"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="w0Q-p9-TVm"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="Linkedin.png"/>
+                    <connections>
+                        <action selector="openLinkedin:" destination="-1" eventType="touchUpInside" id="7Om-mC-Cpa"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailingMargin" secondItem="hfP-Wc-KGY" secondAttribute="trailing" constant="119" id="4rq-fW-6CA"/>
-                <constraint firstItem="hfP-Wc-KGY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="84" id="ZN1-tb-VjD"/>
-                <constraint firstItem="hfP-Wc-KGY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="124.5" id="qOD-oa-Lhb"/>
+                <constraint firstItem="F6j-nD-eda" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="1Bj-jd-3Kr"/>
+                <constraint firstItem="mF8-tS-II5" firstAttribute="leading" secondItem="F6j-nD-eda" secondAttribute="leading" id="7RN-Gk-zVI"/>
+                <constraint firstItem="wwZ-VV-ykS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="K92-G5-VpJ"/>
+                <constraint firstItem="aey-Oy-K2k" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="PdS-Rn-3fy"/>
+                <constraint firstItem="mF8-tS-II5" firstAttribute="top" secondItem="F6j-nD-eda" secondAttribute="bottom" constant="8" symbolic="YES" id="TsG-qW-rQ1"/>
+                <constraint firstItem="F6j-nD-eda" firstAttribute="top" secondItem="Ax5-3y-qt1" secondAttribute="bottom" id="Z8A-Eb-aBW"/>
+                <constraint firstItem="Ax5-3y-qt1" firstAttribute="top" secondItem="wwZ-VV-ykS" secondAttribute="bottom" constant="8" id="hpP-AH-ZGV"/>
+                <constraint firstItem="aey-Oy-K2k" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jVL-TH-NC0"/>
+                <constraint firstItem="Ax5-3y-qt1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="k44-sW-bts"/>
+                <constraint firstItem="wwZ-VV-ykS" firstAttribute="top" secondItem="aey-Oy-K2k" secondAttribute="bottom" constant="63" id="pQb-iF-mRd"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="25.5" y="52.5"/>
+            <point key="canvasLocation" x="25" y="52"/>
         </view>
     </objects>
+    <resources>
+        <image name="Linkedin.png" width="256" height="256"/>
+        <image name="me.jpg" width="500" height="500"/>
+    </resources>
 </document>
