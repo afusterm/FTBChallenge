@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController" customModule="FTBChallenge" customModuleProvider="target">
             <connections>
+                <outlet property="myAccountButton" destination="NKM-UW-UfF" id="j6J-rc-RQ4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -90,7 +91,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NKM-UW-UfF" secondAttribute="trailing" constant="60" id="sLk-w5-weM"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="8.5" y="30.5"/>
+            <point key="canvasLocation" x="8" y="30"/>
         </view>
     </objects>
     <resources>

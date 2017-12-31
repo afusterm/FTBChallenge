@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A901F7281FF8CC440006A231 /* Linkedin.png in Resources */ = {isa = PBXBuildFile; fileRef = A901F7271FF8CC430006A231 /* Linkedin.png */; };
+		A901F72B1FF941220006A231 /* lateral_der.png in Resources */ = {isa = PBXBuildFile; fileRef = A901F7291FF941210006A231 /* lateral_der.png */; };
+		A901F72C1FF941220006A231 /* lateral_izq.png in Resources */ = {isa = PBXBuildFile; fileRef = A901F72A1FF941210006A231 /* lateral_izq.png */; };
 		A91168A31FF6C03C00F5C0CD /* HttpRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91168A21FF6C03C00F5C0CD /* HttpRequester.swift */; };
 		A91168A51FF6C94800F5C0CD /* HttpRequester+URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91168A41FF6C94800F5C0CD /* HttpRequester+URLSession.swift */; };
 		A91168A71FF6FF6300F5C0CD /* LoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91168A61FF6FF6300F5C0CD /* LoginInfo.swift */; };
@@ -60,6 +62,8 @@
 
 /* Begin PBXFileReference section */
 		A901F7271FF8CC430006A231 /* Linkedin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Linkedin.png; sourceTree = "<group>"; };
+		A901F7291FF941210006A231 /* lateral_der.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lateral_der.png; sourceTree = "<group>"; };
+		A901F72A1FF941210006A231 /* lateral_izq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lateral_izq.png; sourceTree = "<group>"; };
 		A91168A21FF6C03C00F5C0CD /* HttpRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequester.swift; sourceTree = "<group>"; };
 		A91168A41FF6C94800F5C0CD /* HttpRequester+URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpRequester+URLSession.swift"; sourceTree = "<group>"; };
 		A91168A61FF6FF6300F5C0CD /* LoginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfo.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 		A91193D61FF7C2BD0058042D /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				A901F7291FF941210006A231 /* lateral_der.png */,
+				A901F72A1FF941210006A231 /* lateral_izq.png */,
 				A91193DB1FF80ED90058042D /* button_cache.png */,
 				A91193DC1FF80ED90058042D /* button_cerrarsesion.png */,
 				A91193DD1FF80ED90058042D /* button_procon.png */,
@@ -374,7 +380,9 @@
 				A9A1E94B1FEC5F1900CE2D76 /* imput_form.png in Resources */,
 				A91193DF1FF80ED90058042D /* button_cerrarsesion.png in Resources */,
 				A91193DE1FF80ED90058042D /* button_cache.png in Resources */,
+				A901F72C1FF941220006A231 /* lateral_izq.png in Resources */,
 				A91193E31FF82A6B0058042D /* me.jpg in Resources */,
+				A901F72B1FF941220006A231 /* lateral_der.png in Resources */,
 				A912789F1FEFCD9000B6A074 /* celda-player.png in Resources */,
 				A9A1E9441FEC5CB700CE2D76 /* background_login.jpg in Resources */,
 				A9A1E9501FEC617C00CE2D76 /* RootViewController.xib in Resources */,
