@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A901E52D1FFA1E0B00ACB4D2 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A901E52C1FFA1E0B00ACB4D2 /* ImageCache.swift */; };
+		A901E5301FFA3F0600ACB4D2 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A901E52E1FFA3F0600ACB4D2 /* PlayersViewController.swift */; };
+		A901E5311FFA3F0600ACB4D2 /* PlayersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A901E52F1FFA3F0600ACB4D2 /* PlayersViewController.xib */; };
 		A901F7281FF8CC440006A231 /* Linkedin.png in Resources */ = {isa = PBXBuildFile; fileRef = A901F7271FF8CC430006A231 /* Linkedin.png */; };
 		A901F72B1FF941220006A231 /* lateral_der.png in Resources */ = {isa = PBXBuildFile; fileRef = A901F7291FF941210006A231 /* lateral_der.png */; };
 		A901F72C1FF941220006A231 /* lateral_izq.png in Resources */ = {isa = PBXBuildFile; fileRef = A901F72A1FF941210006A231 /* lateral_izq.png */; };
@@ -23,8 +25,6 @@
 		A91193DF1FF80ED90058042D /* button_cerrarsesion.png in Resources */ = {isa = PBXBuildFile; fileRef = A91193DC1FF80ED90058042D /* button_cerrarsesion.png */; };
 		A91193E01FF80ED90058042D /* button_procon.png in Resources */ = {isa = PBXBuildFile; fileRef = A91193DD1FF80ED90058042D /* button_procon.png */; };
 		A91193E31FF82A6B0058042D /* me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A91193E21FF82A6B0058042D /* me.jpg */; };
-		A912789A1FEFB43E00B6A074 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278991FEFB43E00B6A074 /* PlayerCell.swift */; };
-		A912789E1FEFCD9000B6A074 /* fondo-players.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A912789C1FEFCD9000B6A074 /* fondo-players.jpg */; };
 		A912789F1FEFCD9000B6A074 /* celda-player.png in Resources */ = {isa = PBXBuildFile; fileRef = A912789D1FEFCD9000B6A074 /* celda-player.png */; };
 		A91278A31FF00C4F00B6A074 /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278A21FF00C4F00B6A074 /* Players.swift */; };
 		A91278A81FF011D000B6A074 /* PlayersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278A71FF011D000B6A074 /* PlayersInteractor.swift */; };
@@ -60,6 +60,8 @@
 
 /* Begin PBXFileReference section */
 		A901E52C1FFA1E0B00ACB4D2 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		A901E52E1FFA3F0600ACB4D2 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		A901E52F1FFA3F0600ACB4D2 /* PlayersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayersViewController.xib; sourceTree = "<group>"; };
 		A901F7271FF8CC430006A231 /* Linkedin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Linkedin.png; sourceTree = "<group>"; };
 		A901F7291FF941210006A231 /* lateral_der.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lateral_der.png; sourceTree = "<group>"; };
 		A901F72A1FF941210006A231 /* lateral_izq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lateral_izq.png; sourceTree = "<group>"; };
@@ -75,8 +77,6 @@
 		A91193DC1FF80ED90058042D /* button_cerrarsesion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_cerrarsesion.png; sourceTree = "<group>"; };
 		A91193DD1FF80ED90058042D /* button_procon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_procon.png; sourceTree = "<group>"; };
 		A91193E21FF82A6B0058042D /* me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = me.jpg; sourceTree = "<group>"; };
-		A91278991FEFB43E00B6A074 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
-		A912789C1FEFCD9000B6A074 /* fondo-players.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fondo-players.jpg"; sourceTree = "<group>"; };
 		A912789D1FEFCD9000B6A074 /* celda-player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "celda-player.png"; sourceTree = "<group>"; };
 		A91278A21FF00C4F00B6A074 /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
 		A91278A71FF011D000B6A074 /* PlayersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersInteractor.swift; sourceTree = "<group>"; };
@@ -164,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				A912789D1FEFCD9000B6A074 /* celda-player.png */,
-				A912789C1FEFCD9000B6A074 /* fondo-players.jpg */,
 			);
 			path = Players;
 			sourceTree = "<group>";
@@ -181,7 +180,6 @@
 		A91C803B1FEE59710090AFDC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A91278991FEFB43E00B6A074 /* PlayerCell.swift */,
 				A91193D41FF7A1A60058042D /* Alert.swift */,
 			);
 			path = Views;
@@ -265,6 +263,8 @@
 				A9A1E9511FEC61C700CE2D76 /* MyAccountViewController.swift */,
 				A9A1E9521FEC61C700CE2D76 /* MyAccountViewController.xib */,
 				A91193D91FF80D060058042D /* UIViewController+Background.swift */,
+				A901E52E1FFA3F0600ACB4D2 /* PlayersViewController.swift */,
+				A901E52F1FFA3F0600ACB4D2 /* PlayersViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -384,13 +384,13 @@
 				A91193DE1FF80ED90058042D /* button_cache.png in Resources */,
 				A901F72C1FF941220006A231 /* lateral_izq.png in Resources */,
 				A91193E31FF82A6B0058042D /* me.jpg in Resources */,
+				A901E5311FFA3F0600ACB4D2 /* PlayersViewController.xib in Resources */,
 				A901F72B1FF941220006A231 /* lateral_der.png in Resources */,
 				A912789F1FEFCD9000B6A074 /* celda-player.png in Resources */,
 				A9A1E9441FEC5CB700CE2D76 /* background_login.jpg in Resources */,
 				A9A1E9501FEC617C00CE2D76 /* RootViewController.xib in Resources */,
 				A9A1E9231FEC5B5D00CE2D76 /* Main.storyboard in Resources */,
 				A9A1E9461FEC5CEA00CE2D76 /* logo_ftb.png in Resources */,
-				A912789E1FEFCD9000B6A074 /* fondo-players.jpg in Resources */,
 				A9A1E9541FEC61C700CE2D76 /* MyAccountViewController.xib in Resources */,
 				A91193E01FF80ED90058042D /* button_procon.png in Resources */,
 				A9A1E94A1FEC5F1900CE2D76 /* button_ok.png in Resources */,
@@ -413,11 +413,11 @@
 			files = (
 				A91278AA1FF0153500B6A074 /* Player.swift in Sources */,
 				A91278A31FF00C4F00B6A074 /* Players.swift in Sources */,
-				A912789A1FEFB43E00B6A074 /* PlayerCell.swift in Sources */,
 				A91168A51FF6C94800F5C0CD /* HttpRequester+URLSession.swift in Sources */,
 				A9A1E9401FEC5C6C00CE2D76 /* LoginViewController.swift in Sources */,
 				A9A1E9201FEC5B5D00CE2D76 /* ViewController.swift in Sources */,
 				A95838ED1FEDB54F0014D869 /* LoginInteractor.swift in Sources */,
+				A901E5301FFA3F0600ACB4D2 /* PlayersViewController.swift in Sources */,
 				A91278A81FF011D000B6A074 /* PlayersInteractor.swift in Sources */,
 				A91168A71FF6FF6300F5C0CD /* LoginInfo.swift in Sources */,
 				A9A1E9531FEC61C700CE2D76 /* MyAccountViewController.swift in Sources */,
