@@ -11,6 +11,8 @@
 		A901E5301FFA3F0600ACB4D2 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A901E52E1FFA3F0600ACB4D2 /* PlayersViewController.swift */; };
 		A901E5311FFA3F0600ACB4D2 /* PlayersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A901E52F1FFA3F0600ACB4D2 /* PlayersViewController.xib */; };
 		A901E5571FFAAF5D00ACB4D2 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A901E5561FFAAF5D00ACB4D2 /* PlayerCell.swift */; };
+		A901E55A1FFAC33500ACB4D2 /* PlayersHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A901E5581FFAC33500ACB4D2 /* PlayersHeaderView.swift */; };
+		A901E55B1FFAC33500ACB4D2 /* PlayersHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A901E5591FFAC33500ACB4D2 /* PlayersHeaderView.xib */; };
 		A901F7281FF8CC440006A231 /* Linkedin.png in Resources */ = {isa = PBXBuildFile; fileRef = A901F7271FF8CC430006A231 /* Linkedin.png */; };
 		A901F72B1FF941220006A231 /* lateral_der.png in Resources */ = {isa = PBXBuildFile; fileRef = A901F7291FF941210006A231 /* lateral_der.png */; };
 		A901F72C1FF941220006A231 /* lateral_izq.png in Resources */ = {isa = PBXBuildFile; fileRef = A901F72A1FF941210006A231 /* lateral_izq.png */; };
@@ -64,6 +66,8 @@
 		A901E52E1FFA3F0600ACB4D2 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		A901E52F1FFA3F0600ACB4D2 /* PlayersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayersViewController.xib; sourceTree = "<group>"; };
 		A901E5561FFAAF5D00ACB4D2 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		A901E5581FFAC33500ACB4D2 /* PlayersHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersHeaderView.swift; sourceTree = "<group>"; };
+		A901E5591FFAC33500ACB4D2 /* PlayersHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayersHeaderView.xib; sourceTree = "<group>"; };
 		A901F7271FF8CC430006A231 /* Linkedin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Linkedin.png; sourceTree = "<group>"; };
 		A901F7291FF941210006A231 /* lateral_der.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lateral_der.png; sourceTree = "<group>"; };
 		A901F72A1FF941210006A231 /* lateral_izq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lateral_izq.png; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 			children = (
 				A91193D41FF7A1A60058042D /* Alert.swift */,
 				A901E5561FFAAF5D00ACB4D2 /* PlayerCell.swift */,
+				A901E5581FFAC33500ACB4D2 /* PlayersHeaderView.swift */,
+				A901E5591FFAC33500ACB4D2 /* PlayersHeaderView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -383,6 +389,7 @@
 				A9A1E9251FEC5B5E00CE2D76 /* Assets.xcassets in Resources */,
 				A901F7281FF8CC440006A231 /* Linkedin.png in Resources */,
 				A9A1E94B1FEC5F1900CE2D76 /* imput_form.png in Resources */,
+				A901E55B1FFAC33500ACB4D2 /* PlayersHeaderView.xib in Resources */,
 				A91193DF1FF80ED90058042D /* button_cerrarsesion.png in Resources */,
 				A91193DE1FF80ED90058042D /* button_cache.png in Resources */,
 				A901F72C1FF941220006A231 /* lateral_izq.png in Resources */,
@@ -414,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A901E55A1FFAC33500ACB4D2 /* PlayersHeaderView.swift in Sources */,
 				A91278AA1FF0153500B6A074 /* Player.swift in Sources */,
 				A91278A31FF00C4F00B6A074 /* Players.swift in Sources */,
 				A91168A51FF6C94800F5C0CD /* HttpRequester+URLSession.swift in Sources */,
