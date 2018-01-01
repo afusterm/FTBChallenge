@@ -59,6 +59,9 @@ class RootViewController: UIViewController {
     }
     
     @IBAction func emptyCache(_ sender: Any) {
+        let imageCache = ImageCache.shared
+        imageCache.empty()
+        showAlert(on: self, title: "Vaciar caché", message: "Se ha vaciado la cache de imagenes")
     }
     
     @IBAction func closeSession(_ sender: Any) {

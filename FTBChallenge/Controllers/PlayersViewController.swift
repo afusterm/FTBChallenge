@@ -10,6 +10,7 @@ import UIKit
 
 class PlayersViewController: UIViewController {
     private let reuseIdentifier = "PlayerCell"
+    fileprivate let imageCache = ImageCache.shared
     
     private var collectionView: UICollectionView!
     private var players: Players
@@ -73,11 +74,13 @@ extension PlayersViewController: UICollectionViewDelegate,
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PlayerCell
+        let cellPlayer = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PlayerCell
         let player = players.get(position: indexPath.row)
-        cell.textLabel.text = player.name
-        cell.imageView.loadImageWith(urlString: player.imageUrl)
+        cellPlayer.name = player.name
+        imageCache.get(for: player.imageUrl, cached: {(image) in
+            cellPlayer.image = image
+        })
         
-        return cell
+        return cellPlayer
     }
 }

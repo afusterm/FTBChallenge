@@ -9,8 +9,8 @@
 import UIKit
 
 class PlayerCell: UICollectionViewCell {
-    var textLabel: UILabel!
-    var imageView: UIImageView!
+    private var textLabel: UILabel!
+    private var imageView: UIImageView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -33,5 +33,23 @@ class PlayerCell: UICollectionViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    var name: String? {
+        get {
+            return textLabel.text
+        }
+        set(value) {
+            textLabel.text = value
+        }
+    }
+    
+    var image: UIImage? {
+        get {
+            return imageView.image
+        }
+        set(value) {
+            imageView.image = value
+        }
     }
 }
