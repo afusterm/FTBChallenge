@@ -53,9 +53,23 @@ class RootViewController: UIViewController {
             }
             
             DispatchQueue.main.async {
-                self.navigationController?.pushViewController(PlayersViewController(players: players), animated: true)
+                let layout = self.createLayout()
+                let playersVC = PlayersViewController(players: players, layout: layout)
+                self.navigationController?.pushViewController(playersVC, animated: true)
             }
         })
+    }
+    
+    func createLayout() -> UICollectionViewLayout {
+        let layout = UICollectionViewFlowLayout()
+        // XXX layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+        layout.scrollDirection = .vertical
+        // XXXlayout.minimumLineSpacing = 10;
+        // XXX layout.minimumInteritemSpacing = 5;
+        // XXX layout.itemSize = CGSize(120, 150);
+        // XXX layout.sectionInset = UIEdgeInsetsMake(5, 10, 5, 10);
+        
+        return layout
     }
     
     @IBAction func emptyCache(_ sender: Any) {

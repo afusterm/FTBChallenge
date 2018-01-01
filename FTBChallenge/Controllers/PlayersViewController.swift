@@ -12,14 +12,14 @@ class PlayersViewController: UICollectionViewController {
     // MARK: Properties
     
     private let reuseIdentifier = "PlayerCell"
-    private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
+    private let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
     private let itemsPerRow: CGFloat = 2
     
     private var players: Players
     
-    init(players: Players) {
+    init(players: Players, layout: UICollectionViewLayout) {
         self.players = players
-        super.init(nibName: nil, bundle: nil)
+        super.init(collectionViewLayout: layout)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,9 +33,14 @@ class PlayersViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        // XXX self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        
+        // XXX let nib = UINib(nibName: "PlayerCell", bundle: nil)
+        // XXX self.collectionView?.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
+        collectionView?.register(PlayerCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        
+        navigationController?.isNavigationBarHidden = false
+        collectionView?.backgroundColor = UIColor(red: 0.183, green: 0.702, blue: 0.634, alpha: 1)
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,9 +72,14 @@ class PlayersViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PlayerCell
     
-        // Configure the cell
+        let player = players.get(position: indexPath.row)
+        let imageCache = ImageCache.shared
+        cell.name = player.name
+        imageCache.get(for: player.imageUrl) { (image) in
+            cell.image = image
+        }
     
         return cell
     }
@@ -115,8 +125,9 @@ extension PlayersViewController: UICollectionViewDelegateFlowLayout {
         let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
         let availableWidth = view.frame.width - paddingSpace
         let widthPerItem = availableWidth / itemsPerRow
+        let aspectRatio: CGFloat = 1.78125
         
-        return CGSize(width: widthPerItem, height: widthPerItem)
+        return CGSize(width: widthPerItem, height: widthPerItem / aspectRatio)
     }
     
     func collectionView(_ collectionView: UICollectionView,
