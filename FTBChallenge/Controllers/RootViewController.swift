@@ -62,12 +62,7 @@ class RootViewController: UIViewController {
     
     func createLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewFlowLayout()
-        // XXX layout.scrollDirection = UICollectionViewScrollDirectionVertical;
         layout.scrollDirection = .vertical
-        // XXXlayout.minimumLineSpacing = 10;
-        // XXX layout.minimumInteritemSpacing = 5;
-        // XXX layout.itemSize = CGSize(120, 150);
-        // XXX layout.sectionInset = UIEdgeInsetsMake(5, 10, 5, 10);
         
         return layout
     }
@@ -93,9 +88,7 @@ class RootViewController: UIViewController {
             return true
         }
         
-        showAlert(on: self,
-                  title: "Error",
-                  message: "No se pudieron descargar jugadores. Vuelva a intentarlo más tarde")
+        showAlert(on: self, title: "Error", message: "No se pudieron descargar jugadores. Vuelva a intentarlo más tarde")
         
         return false
     }

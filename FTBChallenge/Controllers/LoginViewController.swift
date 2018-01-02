@@ -70,14 +70,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Helper methods
     
-    /* XXX
-    private func setupBackgroundImage() {
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "background_login.jpg")
-        backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
-        view.insertSubview(backgroundImage, at: 0)
-    }*/
-    
     private func validateUserName(userName: String) -> Bool {
         if (userName.isEmpty) {
             showAlert(on: self, title: "Usuario vacío", message: "Introduzca nombre de usuario")
