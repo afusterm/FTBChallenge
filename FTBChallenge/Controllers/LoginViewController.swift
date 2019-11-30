@@ -16,8 +16,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userEntry.text = "ftbchallenge"
-        passwordEntry.text = "challengeFTB2017"
         
         navigationController?.isNavigationBarHidden = true
         backgroundImage(named: "background_login.jpg")
@@ -41,8 +39,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     // MARK: Actions
     
     @IBAction func doLogin(_ sender: Any) {
-        let userName = userEntry.text!
-        let password = passwordEntry.text!
+        let userName = userEntry.text!.trimmingCharacters(in: NSCharacterSet.whitespaces)
+        let password = passwordEntry.text!.trimmingCharacters(in: NSCharacterSet.whitespaces)
         
         if (!validateUserName(userName: userName)) {
             return

@@ -32,6 +32,8 @@
 		A91278A31FF00C4F00B6A074 /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278A21FF00C4F00B6A074 /* Players.swift */; };
 		A91278A81FF011D000B6A074 /* PlayersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278A71FF011D000B6A074 /* PlayersInteractor.swift */; };
 		A91278AA1FF0153500B6A074 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91278A91FF0153500B6A074 /* Player.swift */; };
+		A9276BE62006992F001E7379 /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = A9276BE52006992E001E7379 /* eye.png */; };
+		A9276BE82006A929001E7379 /* IconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9276BE72006A929001E7379 /* IconTextField.swift */; };
 		A9567DFA1FF6A9B100968E3D /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9567DF91FF6A9B100968E3D /* LoginInteractorTests.swift */; };
 		A95838ED1FEDB54F0014D869 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95838EC1FEDB54F0014D869 /* LoginInteractor.swift */; };
 		A9A1E91E1FEC5B5D00CE2D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1E91D1FEC5B5D00CE2D76 /* AppDelegate.swift */; };
@@ -87,6 +89,8 @@
 		A91278A21FF00C4F00B6A074 /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
 		A91278A71FF011D000B6A074 /* PlayersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersInteractor.swift; sourceTree = "<group>"; };
 		A91278A91FF0153500B6A074 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A9276BE52006992E001E7379 /* eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye.png; sourceTree = "<group>"; };
+		A9276BE72006A929001E7379 /* IconTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextField.swift; sourceTree = "<group>"; };
 		A9567DF91FF6A9B100968E3D /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		A95838EC1FEDB54F0014D869 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		A9A1E91A1FEC5B5D00CE2D76 /* FTBChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTBChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +194,7 @@
 				A901E5561FFAAF5D00ACB4D2 /* PlayerCell.swift */,
 				A901E5581FFAC33500ACB4D2 /* PlayersHeaderView.swift */,
 				A901E5591FFAC33500ACB4D2 /* PlayersHeaderView.xib */,
+				A9276BE72006A929001E7379 /* IconTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 		A9A1E94C1FEC5F2800CE2D76 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				A9276BE52006992E001E7379 /* eye.png */,
 				A9A1E9481FEC5F1900CE2D76 /* button_ok.png */,
 				A9A1E9491FEC5F1900CE2D76 /* imput_form.png */,
 				A9A1E9451FEC5CEA00CE2D76 /* logo_ftb.png */,
@@ -345,15 +351,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Alejandro;
 				TargetAttributes = {
 					A9A1E9191FEC5B5D00CE2D76 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1110;
 						ProvisioningStyle = Automatic;
 					};
 					A9A1E92D1FEC5B5E00CE2D76 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1110;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A9A1E9191FEC5B5D00CE2D76;
 					};
@@ -391,6 +399,7 @@
 				A9A1E94B1FEC5F1900CE2D76 /* imput_form.png in Resources */,
 				A901E55B1FFAC33500ACB4D2 /* PlayersHeaderView.xib in Resources */,
 				A91193DF1FF80ED90058042D /* button_cerrarsesion.png in Resources */,
+				A9276BE62006992F001E7379 /* eye.png in Resources */,
 				A91193DE1FF80ED90058042D /* button_cache.png in Resources */,
 				A901F72C1FF941220006A231 /* lateral_izq.png in Resources */,
 				A91193E31FF82A6B0058042D /* me.jpg in Resources */,
@@ -428,6 +437,7 @@
 				A9A1E9401FEC5C6C00CE2D76 /* LoginViewController.swift in Sources */,
 				A9A1E9201FEC5B5D00CE2D76 /* ViewController.swift in Sources */,
 				A95838ED1FEDB54F0014D869 /* LoginInteractor.swift in Sources */,
+				A9276BE82006A929001E7379 /* IconTextField.swift in Sources */,
 				A901E5301FFA3F0600ACB4D2 /* PlayersViewController.swift in Sources */,
 				A91278A81FF011D000B6A074 /* PlayersInteractor.swift in Sources */,
 				A91168A71FF6FF6300F5C0CD /* LoginInfo.swift in Sources */,
@@ -496,6 +506,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -503,6 +514,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -553,6 +565,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -560,6 +573,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -600,7 +614,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Alejandro.FTBChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -616,7 +630,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Alejandro.FTBChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -632,7 +646,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Alejandro.FTBChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTBChallenge.app/FTBChallenge";
 			};
@@ -649,7 +663,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Alejandro.FTBChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTBChallenge.app/FTBChallenge";
 			};

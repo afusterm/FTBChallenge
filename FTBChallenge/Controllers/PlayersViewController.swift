@@ -43,7 +43,7 @@ class PlayersViewController: UICollectionViewController {
         collectionView?.register(PlayerCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
         let nib = UINib(nibName: "PlayersHeaderView", bundle: nil)
-        collectionView?.register(nib, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerReuseIdentifier)
+        collectionView?.register(nib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerReuseIdentifier)
     }
 
     // MARK: UICollectionViewDataSource

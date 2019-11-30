@@ -44,14 +44,14 @@ class MyAccountViewController: UIViewController {
     @IBAction func callToPhone(_ sender: Any) {
         let phoneNumber = phoneButton.currentTitle!
         if let url = URL(string: "tel://\(phoneNumber)") {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            UIApplication.shared.open(url, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
         }
     }
     
     @IBAction func openLinkedin(_ sender: Any) {
         let link = "in/alejandrofusterm/"
         if let url = URL(string: "linkedin://\(link)") {
-            UIApplication.shared.open(url, options: [:], completionHandler: { (opened) in
+            UIApplication.shared.open(url, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: { (opened) in
                 if (!opened) {
                     self.openLinkedinWeb(link: link)
                 }
@@ -61,7 +61,12 @@ class MyAccountViewController: UIViewController {
     
     private func openLinkedinWeb(link: String) {
         if let url = URL(string: "https://linkedin.com/\(link)") {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            UIApplication.shared.open(url, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
         }
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }
